@@ -1,0 +1,99 @@
+{
+  "program_id": "social_security_retirement",
+  "name": "Social Security Retirement benefits",
+  "agency": "Social Security Administration",
+  "family": "social_security",
+  "summary": "Monthly retirement benefits based on a person's Social Security work record.",
+  "application_url": "https://www.ssa.gov/retirement",
+  "as_of": "2026-10-06",
+  "eligibility": {
+    "all": [
+      {
+        "field": "age_years",
+        "operator": ">=",
+        "threshold": "earliest_retirement_age_years",
+        "evidence": [
+          {
+            "source_ref": "source_4",
+            "locator": "Retirement benefits: monthly benefits typically start at age 62"
+          }
+        ]
+      },
+      {
+        "field": "ssa_fully_insured_for_retirement",
+        "operator": "==",
+        "value": true,
+        "evidence": [
+          {
+            "source_ref": "source_1",
+            "locator": "RS 00201.001 A and B: fully insured status"
+          }
+        ]
+      }
+    ]
+  },
+  "thresholds": {
+    "earliest_retirement_age_years": {
+      "unit": "years",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 62
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_4",
+          "locator": "Retirement benefits: introductory eligibility statement"
+        }
+      ]
+    }
+  },
+  "tags": [
+    "age_62_or_older_retirement_pathway",
+    "insured_work_record_required",
+    "discovery_screen",
+    "application_and_first_entitlement_month_follow_up"
+  ],
+  "sources": {
+    "source_1": {
+      "url": "https://secure.ssa.gov/poms.nsf/lnx/0300201001",
+      "snapshot_source_id": "ssa_retirement_entitlement-3ce7662560fad694",
+      "sidecar_path": "data/raw/ssa_retirement_entitlement/2026-10-06.json"
+    },
+    "source_2": {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title42/html/USCODE-2024-title42-chap7-subchapII-sec402.htm",
+      "snapshot_source_id": "uscode_social_security_benefits-1af74442e1b2b920",
+      "sidecar_path": "data/raw/uscode_social_security_benefits/2026-10-06_2.json"
+    },
+    "source_3": {
+      "url": "https://www.govinfo.gov/link/uscode/42/402"
+    },
+    "source_4": {
+      "url": "https://www.ssa.gov/retirement"
+    }
+  },
+  "follow_up": [
+    {
+      "kind": "application",
+      "description": "Apply for retirement benefits if pursuing them; filing is an entitlement prerequisite, not a prior discovery requirement.",
+      "evidence": [
+        {
+          "source_ref": "source_1",
+          "locator": "RS 00201.001 A, application or DIB conversion"
+        }
+      ]
+    },
+    {
+      "kind": "entitlement_timing",
+      "description": "Verify the first month of entitlement at age 62 under SSA age-attainment rules before claiming payment for that month.",
+      "evidence": [
+        {
+          "source_ref": "source_1",
+          "locator": "RS 00201.001 C, first or second birth day and full-month age 62 rule"
+        }
+      ]
+    }
+  ]
+}

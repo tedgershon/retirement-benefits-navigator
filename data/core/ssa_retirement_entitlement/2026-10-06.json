@@ -1,0 +1,87 @@
+{
+  "adapter": "ssa",
+  "url": "https://secure.ssa.gov/poms.nsf/lnx/0300201001",
+  "sections": [
+    {
+      "heading": "Social Security",
+      "level": 1,
+      "content": []
+    },
+    {
+      "heading": "Program Operations Manual System (POMS)",
+      "level": 2,
+      "content": [
+        {
+          "text": "TN 9 (04-26)"
+        }
+      ]
+    },
+    {
+      "heading": "RS 00201.001 Retirement Benefits - Entitlement Requirements",
+      "level": 1,
+      "content": []
+    },
+    {
+      "heading": "A. Policy - general",
+      "level": 2,
+      "content": [
+        {
+          "text": "To be entitled, a claimant must:"
+        },
+        {
+          "text": "• Be fully insured, and"
+        },
+        {
+          "text": "• Have attained age 62, and"
+        },
+        {
+          "text": "• Have filed an application, or be entitled to Disability Insurance Benefits (DIB) for\n                        the month before the month of attainment of full retirement age. See RS 00615.003 for the full retirement age (FRA) chart. (See GN 00201.005B.1.a. for additional information regarding DIB to RIB conversions.)"
+        }
+      ]
+    },
+    {
+      "heading": "B. Policy - insured status",
+      "level": 2,
+      "content": [
+        {
+          "text": "See RS 00301.105 for a discussion of fully insured status."
+        }
+      ]
+    },
+    {
+      "heading": "C. Policy - attainment of age",
+      "level": 2,
+      "content": [
+        {
+          "text": "An individual born on the first or second day of the month (attainment of age 62 on\n            the last day of the preceding month or the first day of the current month) could be\n            entitled to benefits for the month of their 62nd birthday. Birth on any other day\n            of the month would preclude entitlement for the month in which the birth occurs since\n            the individual would not be age 62 for that entire month."
+        },
+        {
+          "text": "This provision applies only to claimants for retirement benefits who attain age 62\n            after August 1981. A claimant who was born on September 1, 1919 would attain age 62\n            on August 31, 1981, and could, therefore, be entitled for August because this provision\n            would not apply."
+        },
+        {
+          "table": [
+            [
+              "To Link to this section - Use this URL: http://policy.ssa.gov/poms.nsf/lnx/0300201001",
+              "RS 00201.001 - Retirement Benefits - Entitlement Requirements - 04/21/2026 Batch run: 04/21/2026 Rev: 04/21/2026"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "expected_sections": [],
+  "missing_expected_sections": [],
+  "candidate_requirements": [
+    {
+      "locator": "A. Policy - general",
+      "text": "To be entitled, a claimant must:"
+    }
+  ],
+  "source_id": "ssa_retirement_entitlement-3ce7662560fad694",
+  "seed_id": "ssa_retirement_entitlement",
+  "program_ids": [
+    "social_security_retirement"
+  ],
+  "review_required": true,
+  "extracted_on": "2026-10-06"
+}

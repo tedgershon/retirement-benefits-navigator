@@ -1,0 +1,13 @@
+{
+  "source_id": "va_veterans_pension_rates-d62315ea2a98f73c",
+  "seed_id": "va_veterans_pension_rates",
+  "url": "https://www.va.gov/pension/veterans-pension-rates/",
+  "document_type": "html",
+  "snapshot_path": "data\\raw\\va_veterans_pension_rates\\2026-10-06_4.html",
+  "content_hash": "d62315ea2a98f73c8977561515ade253855f097d6223d26438409d948ab972bc",
+  "fetched_at": "2026-10-06T03:26:52.766481+00:00",
+  "adapter": "va",
+  "program_ids": [
+    "va_veterans_pension"
+  ]
+}

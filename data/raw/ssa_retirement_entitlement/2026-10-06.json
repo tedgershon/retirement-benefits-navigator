@@ -1,0 +1,13 @@
+{
+  "source_id": "ssa_retirement_entitlement-3ce7662560fad694",
+  "seed_id": "ssa_retirement_entitlement",
+  "url": "https://secure.ssa.gov/poms.nsf/lnx/0300201001",
+  "document_type": "html",
+  "snapshot_path": "data\\raw\\ssa_retirement_entitlement\\2026-10-06.html",
+  "content_hash": "3ce7662560fad6946628c3b9a8df61957b2c4933124ae791014ecd8ad9f4c1ff",
+  "fetched_at": "2026-10-06T15:57:52.326161+00:00",
+  "adapter": "ssa",
+  "program_ids": [
+    "social_security_retirement"
+  ]
+}

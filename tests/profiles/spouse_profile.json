@@ -1,0 +1,8 @@
+{
+  "worker_entitled_to_retirement_or_disability": true,
+  "relationship_to_worker": "spouse",
+  "ssa_current_spouse_relationship_verified": true,
+  "ssa_own_pia_below_half_worker_pia": true,
+  "marriage_duration_years": 1,
+  "age_years": 62
+}

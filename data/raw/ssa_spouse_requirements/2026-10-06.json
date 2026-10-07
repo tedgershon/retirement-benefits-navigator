@@ -1,0 +1,13 @@
+{
+  "source_id": "ssa_spouse_requirements-9f4cdaeb0bda9517",
+  "seed_id": "ssa_spouse_requirements",
+  "url": "https://secure.ssa.gov/poms.nsf/lnx/0300202001",
+  "document_type": "html",
+  "snapshot_path": "data/raw/ssa_spouse_requirements/2026-10-06.html",
+  "content_hash": "9f4cdaeb0bda9517f420afaa48d44df0660b9451697f05a59dfb7ad72454d1c6",
+  "fetched_at": "2026-10-06T20:08:50.831267+00:00",
+  "adapter": "ssa",
+  "program_ids": [
+    "social_security_spouse"
+  ]
+}

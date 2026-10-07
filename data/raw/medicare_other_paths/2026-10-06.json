@@ -1,0 +1,13 @@
+{
+  "source_id": "medicare_other_paths-d7d2692dd6995310",
+  "seed_id": "medicare_other_paths",
+  "url": "https://www.medicare.gov/basics/get-started-with-medicare/other-paths",
+  "document_type": "html",
+  "snapshot_path": "data\\raw\\medicare_other_paths\\2026-10-06.html",
+  "content_hash": "d7d2692dd6995310120767ac45424ba354587a2a094f2c696b06f5fc6b29b7c9",
+  "fetched_at": "2026-10-06T01:57:00.054726+00:00",
+  "adapter": "medicare",
+  "program_ids": [
+    "medicare_eligibility"
+  ]
+}

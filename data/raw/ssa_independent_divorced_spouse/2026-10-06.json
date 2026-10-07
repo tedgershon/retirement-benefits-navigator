@@ -1,0 +1,13 @@
+{
+  "source_id": "ssa_independent_divorced_spouse-10a741b98b0b975b",
+  "seed_id": "ssa_independent_divorced_spouse",
+  "url": "https://secure.ssa.gov/poms.nsf/lnx/0300202100",
+  "document_type": "html",
+  "snapshot_path": "data/raw/ssa_independent_divorced_spouse/2026-10-06.html",
+  "content_hash": "10a741b98b0b975b245ed68daf4e10dd774803294495f1505d606433889f82a9",
+  "fetched_at": "2026-10-06T20:08:51.025542+00:00",
+  "adapter": "ssa",
+  "program_ids": [
+    "social_security_spouse"
+  ]
+}

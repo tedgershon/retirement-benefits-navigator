@@ -1,0 +1,82 @@
+{
+  "adapter": "medicare",
+  "url": "https://www.cms.gov/medicare/enrollment-renewal/part-d-plans/low-income-subsidy/eligibility-low-income-subsidy",
+  "sections": [
+    {
+      "heading": "Eligibility for Low-Income Subsidy",
+      "level": 1,
+      "content": [
+        {
+          "text": "This page contains information on eligibility for the Low-Income Subsidy (also called \"Extra Help\") available under the Medicare Part D prescription drug program.  It includes information on how one becomes eligible for the Low-Income Subsidy as well as useful outreach material."
+        },
+        {
+          "text": "See the link under \"Related Links Outside CMS\" below for help with applying for LIS eligibility with SSA."
+        },
+        {
+          "text": "See the first link under \"Related Links Inside CMS\" below for guidance to States on processing LIS applications."
+        },
+        {
+          "text": "See the second link under \"Related Links Inside CMS\" below for marketing guidelines for Part C and Part D sponsors."
+        },
+        {
+          "text": "See the third link under \"Related Links Inside CMS\" below for information on Extra Help for those with Limited Income and Resources."
+        }
+      ]
+    },
+    {
+      "heading": "Downloads",
+      "level": 2,
+      "content": [
+        {
+          "text": "Low Income Subsidy Guidance for States (PDF)"
+        },
+        {
+          "text": "2021 LIS Resource Limits Memo (PDF)"
+        }
+      ]
+    },
+    {
+      "heading": "Related Links",
+      "level": 2,
+      "content": [
+        {
+          "text": "Extra Help with Prescription Drug Costs"
+        },
+        {
+          "text": "Limited Income and Resources"
+        }
+      ]
+    }
+  ],
+  "expected_sections": [],
+  "missing_expected_sections": [],
+  "candidate_requirements": [
+    {
+      "locator": "Eligibility for Low-Income Subsidy",
+      "text": "This page contains information on eligibility for the Low-Income Subsidy (also called \"Extra Help\") available under the Medicare Part D prescription drug program.  It includes information on how one becomes eligible for the Low-Income Subsidy as well as useful outreach material."
+    },
+    {
+      "locator": "Eligibility for Low-Income Subsidy",
+      "text": "See the third link under \"Related Links Inside CMS\" below for information on Extra Help for those with Limited Income and Resources."
+    },
+    {
+      "locator": "Downloads",
+      "text": "Low Income Subsidy Guidance for States (PDF)"
+    },
+    {
+      "locator": "Downloads",
+      "text": "2021 LIS Resource Limits Memo (PDF)"
+    },
+    {
+      "locator": "Related Links",
+      "text": "Limited Income and Resources"
+    }
+  ],
+  "source_id": "cms_extra_help-f25d2baa454291b9",
+  "seed_id": "cms_extra_help",
+  "program_ids": [
+    "medicare_part_d_extra_help"
+  ],
+  "review_required": true,
+  "extracted_on": "2026-10-06"
+}

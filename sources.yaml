@@ -1,0 +1,243 @@
+# Curated seed URLs, not exhaustive evidence or reviewed program data.
+# seed_id identifies a fetch target; source_id identifies a collected snapshot.
+# purpose explains why a fetch target is curated; it is not part of a program document.
+manifest_version: 1
+sources:
+  - seed_id: ssa_retirement
+    adapter: ssa
+    url: https://www.ssa.gov/retirement
+    program_ids: [social_security_retirement]
+    purpose: eligibility_discovery
+  - seed_id: ssa_retirement_entitlement
+    adapter: ssa
+    url: https://secure.ssa.gov/poms.nsf/lnx/0300201001
+    program_ids: [social_security_retirement]
+    purpose: eligibility_detail
+  - seed_id: ssa_family
+    adapter: ssa
+    url: https://www.ssa.gov/family
+    program_ids: [social_security_spouse]
+    purpose: eligibility_discovery
+  - seed_id: ssa_survivor
+    adapter: ssa
+    url: https://www.ssa.gov/survivor
+    program_ids: [social_security_survivor]
+    purpose: eligibility_discovery
+  - seed_id: ssa_survivor_eligibility
+    adapter: ssa
+    url: https://www.ssa.gov/survivor/eligibility
+    program_ids: [social_security_survivor]
+    purpose: eligibility_detail
+  - seed_id: ssa_family_eligibility
+    adapter: ssa
+    url: https://www.ssa.gov/family/eligibility
+    program_ids: [social_security_spouse]
+    purpose: eligibility_detail
+  - seed_id: ssa_spouse_requirements
+    adapter: ssa
+    url: https://secure.ssa.gov/poms.nsf/lnx/0300202001
+    program_ids: [social_security_spouse]
+    purpose: spouse_and_child_in_care_requirements
+  - seed_id: ssa_independent_divorced_spouse
+    adapter: ssa
+    url: https://secure.ssa.gov/poms.nsf/lnx/0300202100
+    program_ids: [social_security_spouse]
+    purpose: independent_divorced_spouse_route
+  - seed_id: ssa_divorced_spouse_requirements
+    adapter: ssa
+    url: https://secure.ssa.gov/apps10/poms.nsf/lnx/0300202005
+    program_ids: [social_security_spouse]
+    purpose: divorced_spouse_entitlement_requirements
+  - seed_id: ssa_widow_requirements
+    adapter: ssa
+    url: https://secure.ssa.gov/poms.nsf/lnx/0300207001
+    program_ids: [social_security_survivor]
+    purpose: widow_and_surviving_divorced_spouse_requirements
+  - seed_id: ssa_survivor_child_requirements
+    adapter: ssa
+    url: https://secure.ssa.gov/poms.nsf/lnx/0300203001
+    program_ids: [social_security_survivor]
+    purpose: child_entitlement_and_school_age
+  - seed_id: ssa_survivor_student_extension
+    adapter: ssa
+    url: https://secure.ssa.gov/apps10/poms.nsf/lnx/0300205001
+    program_ids: [social_security_survivor]
+    purpose: school_age_deeming_exception
+  - seed_id: ssa_survivor_parent_requirements
+    adapter: ssa
+    url: https://secure.ssa.gov/apps10/poms.nsf/lnx/0300209001
+    program_ids: [social_security_survivor]
+    purpose: dependent_parent_entitlement
+  - seed_id: ssa_survivor_mother_father
+    adapter: ssa
+    url: https://secure.ssa.gov/poms.nsf/lnx/0300208001
+    program_ids: [social_security_survivor]
+    purpose: child_in_care_survivor_entitlement
+  - seed_id: ssa_survivor_divorced_mother_father
+    adapter: ssa
+    url: https://secure.ssa.gov/poms.nsf/lnx/0300208010
+    program_ids: [social_security_survivor]
+    purpose: child_in_care_divorced_survivor_entitlement
+  - seed_id: ssa_survivor_child_in_care
+    adapter: ssa
+    url: https://secure.ssa.gov/poms.nsf/lnx/0301310001
+    program_ids: [social_security_survivor]
+    purpose: child_in_care_age_and_disability
+  - seed_id: ssa_ssi
+    adapter: ssa
+    url: https://www.ssa.gov/ssi/eligibility
+    program_ids: [ssi_federal]
+    purpose: eligibility_discovery
+  - seed_id: ssa_ssi_detail
+    adapter: ssa
+    url: https://www.ssa.gov/ssi/text-eligibility-ussi.htm
+    program_ids: [ssi_federal]
+    purpose: eligibility_detail
+  - seed_id: ssa_ssi_resources
+    adapter: ssa
+    url: https://www.ssa.gov/ssi/spotlights/spot-resources.htm
+    program_ids: [ssi_federal]
+    purpose: threshold_boundary
+  - seed_id: ssa_ssi_income
+    adapter: ssa
+    url: https://www.ssa.gov/ssi/text-income-ussi.htm
+    program_ids: [ssi_federal]
+    purpose: countable_income_method
+  - seed_id: ssa_ssi_resources_detail
+    adapter: ssa
+    url: https://www.ssa.gov/ssi/text-resources-ussi.htm
+    program_ids: [ssi_federal]
+    purpose: resource_exclusions_and_deeming
+  - seed_id: ssa_ssi_benefits
+    adapter: ssa
+    url: https://www.ssa.gov/ssi/text-benefits-ussi.htm
+    program_ids: [ssi_federal]
+    purpose: federal_benefit_rate
+  - seed_id: ssa_ssi_transfer_penalty
+    adapter: ssa
+    url: https://secure.ssa.gov/apps10/poms.nsf/links/0501150110
+    program_ids: [ssi_federal]
+    purpose: resource_transfer_ineligibility
+  - seed_id: ssa_ssi_other_benefits
+    adapter: ssa
+    url: https://secure.ssa.gov/apps10/poms.nsf/lnx/0500510001
+    program_ids: [ssi_federal]
+    purpose: required_other_benefit_filing
+  - seed_id: ssa_ssi_financial_permission
+    adapter: ssa
+    url: https://secure.ssa.gov/poms.nsf/lnx/0500515001
+    program_ids: [ssi_federal]
+    purpose: financial_institution_permission
+  - seed_id: ssa_ssi_general_eligibility
+    adapter: ssa
+    url: https://secure.ssa.gov/poms.nsf/lnx/0500501001
+    program_ids: [ssi_federal]
+    purpose: remaining_statutory_eligibility_bars
+  - seed_id: medicare_start
+    adapter: medicare
+    url: https://www.medicare.gov/basics/get-started-with-medicare
+    program_ids: [medicare_eligibility]
+    purpose: eligibility_discovery
+  - seed_id: medicare_other_paths
+    adapter: medicare
+    url: https://www.medicare.gov/basics/get-started-with-medicare/other-paths
+    program_ids: [medicare_eligibility]
+    purpose: coverage_pathways
+  - seed_id: medicare_sign_up
+    adapter: medicare
+    url: https://www.medicare.gov/basics/get-started-with-medicare/sign-up/how-do-i-sign-up-for-medicare
+    program_ids: [medicare_eligibility]
+    purpose: enrollment_timing_reference
+  - seed_id: medicare_extra_help
+    adapter: medicare
+    url: https://www.medicare.gov/basics/costs/help/drug-costs
+    program_ids: [medicare_part_d_extra_help]
+    purpose: eligibility_and_thresholds
+  - seed_id: cms_extra_help
+    adapter: medicare
+    url: https://www.cms.gov/medicare/enrollment-renewal/part-d-plans/low-income-subsidy/eligibility-low-income-subsidy
+    program_ids: [medicare_part_d_extra_help]
+    purpose: guidance_discovery
+  - seed_id: va_veterans_pension
+    adapter: va
+    url: https://www.va.gov/pension/eligibility/
+    program_ids: [va_veterans_pension]
+    purpose: eligibility
+  - seed_id: va_veterans_pension_rates
+    adapter: va
+    url: https://www.va.gov/pension/veterans-pension-rates/
+    program_ids: [va_veterans_pension]
+    purpose: thresholds
+  - seed_id: va_survivors_pension
+    adapter: va
+    url: https://www.va.gov/family-and-caregiver-benefits/survivor-compensation/survivors-pension/
+    program_ids: [va_survivors_pension]
+    purpose: eligibility
+  - seed_id: va_survivors_pension_rates
+    adapter: va
+    url: https://www.va.gov/family-and-caregiver-benefits/survivor-compensation/survivors-pension/rates/
+    program_ids: [va_survivors_pension]
+    purpose: thresholds
+  - seed_id: hhs_poverty_guidelines
+    adapter: hhs
+    url: https://aspe.hhs.gov/poverty-guidelines/
+    program_ids: []
+    purpose: shared_reference
+  # GovInfo's /link/uscode endpoint resolves to the latest published U.S. Code edition.
+  # Codification may lag newly enacted laws; agency guidance remains a separate source.
+  - seed_id: uscode_social_security_benefits
+    adapter: statute
+    url: https://www.govinfo.gov/link/uscode/42/402
+    program_ids: [social_security_retirement, social_security_spouse, social_security_survivor]
+    purpose: statutory_reference
+  - seed_id: uscode_ssi
+    adapter: statute
+    url: https://www.govinfo.gov/link/uscode/42/1382
+    program_ids: [ssi_federal]
+    purpose: statutory_reference
+  - seed_id: uscode_medicare_part_a
+    adapter: statute
+    url: https://www.govinfo.gov/link/uscode/42/1395c
+    program_ids: [medicare_eligibility]
+    purpose: statutory_reference
+  - seed_id: uscode_medicare_part_b
+    adapter: statute
+    url: https://www.govinfo.gov/link/uscode/42/1395o
+    program_ids: [medicare_eligibility]
+    purpose: statutory_reference
+  - seed_id: uscode_extra_help
+    adapter: statute
+    url: https://www.govinfo.gov/link/uscode/42/1395w-114
+    program_ids: [medicare_part_d_extra_help]
+    purpose: statutory_reference
+  - seed_id: uscode_veterans_pension
+    adapter: statute
+    url: https://www.govinfo.gov/link/uscode/38/1521
+    program_ids: [va_veterans_pension]
+    purpose: statutory_reference
+  - seed_id: uscode_survivors_pension
+    adapter: statute
+    url: https://www.govinfo.gov/link/uscode/38/1541
+    program_ids: [va_survivors_pension]
+    purpose: statutory_reference
+  - seed_id: cfr_va_minimum_active_duty
+    adapter: statute
+    url: https://www.govinfo.gov/content/pkg/CFR-2025-title38-vol1/pdf/CFR-2025-title38-vol1-sec3-12a.pdf
+    program_ids: [va_veterans_pension, va_survivors_pension]
+    purpose: minimum_active_duty_and_exceptions
+  - seed_id: cfr_va_asset_transfers
+    adapter: statute
+    url: https://www.govinfo.gov/content/pkg/CFR-2025-title38-vol1/pdf/CFR-2025-title38-vol1-sec3-276.pdf
+    program_ids: [va_veterans_pension, va_survivors_pension]
+    purpose: pension_asset_transfer_penalty
+  - seed_id: cfr_va_survivor_remarriage
+    adapter: statute
+    url: https://www.govinfo.gov/content/pkg/CFR-2025-title38-vol1/pdf/CFR-2025-title38-vol1-sec3-55.pdf
+    program_ids: [va_survivors_pension]
+    purpose: pension_surviving_spouse_remarriage_exceptions
+  - seed_id: cfr_va_surviving_child_pension
+    adapter: statute
+    url: https://www.govinfo.gov/content/pkg/CFR-2025-title38-vol1/pdf/CFR-2025-title38-vol1-sec3-24.pdf
+    program_ids: [va_survivors_pension]
+    purpose: child_separate_entitlement_and_rate_computation
+

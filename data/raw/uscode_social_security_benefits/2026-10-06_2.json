@@ -1,0 +1,15 @@
+{
+  "source_id": "uscode_social_security_benefits-1af74442e1b2b920",
+  "seed_id": "uscode_social_security_benefits",
+  "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title42/html/USCODE-2024-title42-chap7-subchapII-sec402.htm",
+  "document_type": "html",
+  "snapshot_path": "data\\raw\\uscode_social_security_benefits\\2026-10-06_2.html",
+  "content_hash": "1af74442e1b2b920f70fe761c61c956493fe263125dfbd772c2e52efcee3063f",
+  "fetched_at": "2026-10-06T03:32:37.506926+00:00",
+  "adapter": "statute",
+  "program_ids": [
+    "social_security_retirement",
+    "social_security_spouse",
+    "social_security_survivor"
+  ]
+}

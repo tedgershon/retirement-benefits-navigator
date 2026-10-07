@@ -1,0 +1,15 @@
+{
+  "retrieved_on": "2026-10-06",
+  "method": "Official SSA page inspected through agent web access after repository HTTP fetch returned 403",
+  "raw_snapshot_available": false,
+  "source_url": "https://www.ssa.gov/ssi/spotlights/spot-resources.htm",
+  "locator": "Spotlight on Resources -- 2026 Edition; Why are resources important?",
+  "facts": [
+    "SSI countable resources must not exceed $2,000 for an individual or $3,000 for a couple.",
+    "The page distinguishes countable resources from items that do not count, including the home a person lives in and generally one vehicle used for transportation."
+  ],
+  "limitations": [
+    "This note is unreviewed and has no locally preserved original response bytes or source hash.",
+    "It does not provide a complete SSI income or resource calculation."
+  ]
+}

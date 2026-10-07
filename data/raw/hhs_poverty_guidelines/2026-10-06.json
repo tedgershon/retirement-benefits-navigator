@@ -1,0 +1,11 @@
+{
+  "source_id": "hhs_poverty_guidelines-a89d26fd6fa5beba",
+  "seed_id": "hhs_poverty_guidelines",
+  "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+  "document_type": "html",
+  "snapshot_path": "data\\raw\\hhs_poverty_guidelines\\2026-10-06.html",
+  "content_hash": "a89d26fd6fa5beba99a4a878453c16191f2f78f9dea642e97a7bc042bb9c59e3",
+  "fetched_at": "2026-10-06T01:54:53.736674+00:00",
+  "adapter": "hhs",
+  "program_ids": []
+}

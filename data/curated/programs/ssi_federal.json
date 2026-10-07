@@ -1,0 +1,331 @@
+{
+  "program_id": "ssi_federal",
+  "name": "Federal Supplemental Security Income",
+  "agency": "Social Security Administration",
+  "family": "ssi",
+  "summary": "Federal income support for people with limited income and resources who meet an age, blindness, or disability pathway.",
+  "application_url": "https://www.ssa.gov/ssi",
+  "as_of": "2026-10-06",
+  "eligibility": {
+    "all": [
+      {
+        "any": [
+          {
+            "field": "age_years",
+            "operator": ">=",
+            "evidence": [
+              {
+                "source_ref": "source_10",
+                "locator": "2026 Edition: Who is eligible for SSI?; What are limited resources?"
+              }
+            ],
+            "threshold": "aged_pathway_age_years"
+          },
+          {
+            "all": [
+              {
+                "field": "ssa_blindness_requirement_met",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_10",
+                    "locator": "2026 Edition: Who is eligible for SSI?; What are limited resources?"
+                  }
+                ],
+                "value": true
+              },
+              {
+                "unknown": "Blindness or disability pathway requires an SSA determination and further ruleset review.",
+                "evidence": [
+                  {
+                    "source_ref": "source_10",
+                    "locator": "2026 Edition: Who is eligible for SSI?; What are limited resources?"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "field": "ssa_disability_requirement_met",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_10",
+                    "locator": "2026 Edition: Who is eligible for SSI?; What are limited resources?"
+                  }
+                ],
+                "value": true
+              },
+              {
+                "unknown": "Blindness or disability pathway requires an SSA determination and further ruleset review.",
+                "evidence": [
+                  {
+                    "source_ref": "source_10",
+                    "locator": "2026 Edition: Who is eligible for SSI?; What are limited resources?"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field": "ssi_countable_resources_cents",
+        "operator": "<=",
+        "evidence": [
+          {
+            "source_ref": "source_8",
+            "locator": "2026 Edition: Why are resources important?"
+          }
+        ],
+        "threshold": "resource_limit",
+        "selectors": {
+          "household": "ssi_resource_household"
+        }
+      },
+      {
+        "field": "ssi_citizenship_or_noncitizen_eligibility_met",
+        "operator": "==",
+        "evidence": [
+          {
+            "source_ref": "source_10",
+            "locator": "2026 Edition: Who is eligible for SSI?; What are limited resources?"
+          }
+        ],
+        "value": true
+      },
+      {
+        "field": "ssi_residency_requirement_met",
+        "operator": "==",
+        "evidence": [
+          {
+            "source_ref": "source_10",
+            "locator": "2026 Edition: Who is eligible for SSI?; What are limited resources?"
+          }
+        ],
+        "value": true
+      },
+      {
+        "field": "ssi_absence_rule_met_for_month",
+        "operator": "==",
+        "evidence": [
+          {
+            "source_ref": "source_10",
+            "locator": "2026 Edition: Who is eligible for SSI?; absent for full calendar month or 30 consecutive days; return requirement"
+          }
+        ],
+        "value": true
+      },
+      {
+        "field": "ssi_institution_rule_met_for_month",
+        "operator": "==",
+        "evidence": [
+          {
+            "source_ref": "source_10",
+            "locator": "2026 Edition: Who is not eligible for SSI?; prison and public-institution exceptions"
+          }
+        ],
+        "value": true
+      },
+      {
+        "field": "ssi_countable_monthly_income_cents",
+        "operator": "<",
+        "threshold": "applicable_monthly_federal_rate",
+        "evidence": [
+          {
+            "source_ref": "source_11",
+            "locator": "2026 Edition, countable income subtracted from applicable federal benefit rate; web tool inspection, no raw snapshot"
+          }
+        ]
+      },
+      {
+        "field": "ssi_resource_transfer_penalty_not_in_effect",
+        "operator": "==",
+        "value": true,
+        "evidence": [
+          {
+            "source_ref": "source_1",
+            "locator": "SI 01150.110 A-D, transfer penalty and exceptions; web tool inspection, no raw snapshot"
+          }
+        ]
+      },
+      {
+        "field": "ssi_no_fugitive_felon_or_probation_parole_bar",
+        "operator": "==",
+        "value": true,
+        "evidence": [
+          {
+            "source_ref": "source_3",
+            "locator": "SI 00501.001 B.4.b, warrant and probation/parole bars; web tool inspection, no raw snapshot"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_ref": "source_5",
+        "locator": "42 U.S.C. § 1382; statutory context"
+      },
+      {
+        "source_ref": "source_11",
+        "locator": "2026 Edition: How does your income affect your SSI benefit?; web tool inspection, no raw snapshot"
+      },
+      {
+        "source_ref": "source_12",
+        "locator": "2026 Edition: resource exclusions and deeming; web tool inspection, no raw snapshot"
+      },
+      {
+        "source_ref": "source_9",
+        "locator": "2026 Edition: Federal benefit rates; web tool inspection, no raw snapshot"
+      },
+      {
+        "source_ref": "source_1",
+        "locator": "SI 01150.110, transfer ineligibility; web tool inspection, no raw snapshot"
+      },
+      {
+        "source_ref": "source_2",
+        "locator": "SI 00510.001, filing for other program benefits; web tool inspection, no raw snapshot"
+      },
+      {
+        "source_ref": "source_4",
+        "locator": "SI 00515.001, financial-record permission; web tool inspection, no raw snapshot"
+      },
+      {
+        "source_ref": "source_3",
+        "locator": "SI 00501.001 B.4, other statutory bars; web tool inspection, no raw snapshot"
+      }
+    ]
+  },
+  "thresholds": {
+    "aged_pathway_age_years": {
+      "unit": "years",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 65
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_10",
+          "locator": "2026 Edition: Who is eligible for SSI?; What are limited resources?"
+        }
+      ]
+    },
+    "resource_limit": {
+      "unit": "usd_cents",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {
+            "household": "individual"
+          },
+          "value": 200000
+        },
+        {
+          "selectors": {
+            "household": "couple"
+          },
+          "value": 300000
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_8",
+          "locator": "2026 Edition: Why are resources important?"
+        }
+      ]
+    },
+    "applicable_monthly_federal_rate": {
+      "unit": "usd_cents",
+      "period": "monthly",
+      "rows": [
+        {
+          "selectors": {},
+          "input_field": "ssi_applicable_monthly_federal_rate_cents"
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_11",
+          "locator": "2026 Edition, SSI Federal benefit rate minus countable income; amount depends on individual and living arrangement; web tool inspection, no raw snapshot"
+        }
+      ]
+    }
+  },
+  "tags": [
+    "aged_65_pathway",
+    "blindness_pathway",
+    "disability_pathway",
+    "countable_resource_limit_applies",
+    "countable_income_rule_requires_calculation",
+    "absence_rule_applies",
+    "institution_rule_applies",
+    "federal_ssi_only"
+  ],
+  "follow_up": [
+    {
+      "kind": "application",
+      "description": "After SSA gives written notice of another benefit to pursue, take the required filing steps or establish an exception; this is not a prior-filing gate for benefit discovery.",
+      "evidence": [
+        {
+          "source_ref": "source_2",
+          "locator": "SI 00510.001 B-C, written notice, filing period and exceptions"
+        }
+      ]
+    },
+    {
+      "kind": "application",
+      "description": "Provide financial institution permission when applying, subject to SSA good-cause rules; no prior permission is required to discover SSI.",
+      "evidence": [
+        {
+          "source_ref": "source_4",
+          "locator": "SI 00515.001 B, financial permission and good cause"
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "source_1": {
+      "url": "https://secure.ssa.gov/apps10/poms.nsf/links/0501150110"
+    },
+    "source_2": {
+      "url": "https://secure.ssa.gov/apps10/poms.nsf/lnx/0500510001"
+    },
+    "source_3": {
+      "url": "https://secure.ssa.gov/poms.nsf/lnx/0500501001"
+    },
+    "source_4": {
+      "url": "https://secure.ssa.gov/poms.nsf/lnx/0500515001"
+    },
+    "source_5": {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title42/html/USCODE-2024-title42-chap7-subchapXVI-partA-sec1382.htm",
+      "snapshot_source_id": "uscode_ssi-0dccd5cd82b405e7",
+      "sidecar_path": "data/raw/uscode_ssi/2026-10-06_2.json"
+    },
+    "source_6": {
+      "url": "https://www.govinfo.gov/link/uscode/42/1382"
+    },
+    "source_7": {
+      "url": "https://www.ssa.gov/ssi/eligibility"
+    },
+    "source_8": {
+      "url": "https://www.ssa.gov/ssi/spotlights/spot-resources.htm"
+    },
+    "source_9": {
+      "url": "https://www.ssa.gov/ssi/text-benefits-ussi.htm"
+    },
+    "source_10": {
+      "url": "https://www.ssa.gov/ssi/text-eligibility-ussi.htm"
+    },
+    "source_11": {
+      "url": "https://www.ssa.gov/ssi/text-income-ussi.htm"
+    },
+    "source_12": {
+      "url": "https://www.ssa.gov/ssi/text-resources-ussi.htm"
+    }
+  }
+}

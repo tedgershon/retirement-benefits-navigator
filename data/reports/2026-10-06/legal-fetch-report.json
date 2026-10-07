@@ -1,0 +1,44 @@
+[
+  {
+    "seed_id": "uscode_social_security_benefits",
+    "status": "saved",
+    "source_id": "uscode_social_security_benefits-1af74442e1b2b920",
+    "fetched_at": "2026-10-06T03:32:37.506926+00:00"
+  },
+  {
+    "seed_id": "uscode_ssi",
+    "status": "saved",
+    "source_id": "uscode_ssi-0dccd5cd82b405e7",
+    "fetched_at": "2026-10-06T03:32:37.918185+00:00"
+  },
+  {
+    "seed_id": "uscode_medicare_part_a",
+    "status": "saved",
+    "source_id": "uscode_medicare_part_a-2ef974f387309fd0",
+    "fetched_at": "2026-10-06T03:32:38.329399+00:00"
+  },
+  {
+    "seed_id": "uscode_medicare_part_b",
+    "status": "saved",
+    "source_id": "uscode_medicare_part_b-9660d17646025751",
+    "fetched_at": "2026-10-06T03:32:38.713176+00:00"
+  },
+  {
+    "seed_id": "uscode_extra_help",
+    "status": "saved",
+    "source_id": "uscode_extra_help-90ce186fe259542e",
+    "fetched_at": "2026-10-06T03:32:39.220313+00:00"
+  },
+  {
+    "seed_id": "uscode_veterans_pension",
+    "status": "saved",
+    "source_id": "uscode_veterans_pension-91027a9670b4020f",
+    "fetched_at": "2026-10-06T03:32:39.691088+00:00"
+  },
+  {
+    "seed_id": "uscode_survivors_pension",
+    "status": "saved",
+    "source_id": "uscode_survivors_pension-ce1cc098d31b1c23",
+    "fetched_at": "2026-10-06T03:32:40.115480+00:00"
+  }
+]

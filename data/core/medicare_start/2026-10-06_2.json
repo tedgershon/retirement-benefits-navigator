@@ -1,0 +1,112 @@
+{
+  "adapter": "medicare",
+  "url": "https://www.medicare.gov/basics/get-started-with-medicare",
+  "sections": [
+    {
+      "heading": "Get started with Medicare",
+      "level": 1,
+      "content": [
+        {
+          "text": "Medicare is health insurance for people 65 or older who meet citizenship or residency requirements. You may be eligible to get Medicare earlier if you have a disability, End-Stage Renal Disease (ESRD), or ALS (also called Lou Gehrig’s disease)."
+        },
+        {
+          "text": "Some people get Medicare automatically, others have to actively sign up -- it depends if you start getting retirement or disability benefits from Social Security before you turn 65."
+        },
+        {
+          "text": "What do Social Security benefits have to do with getting Medicare?"
+        },
+        {
+          "text": "What are Medicare's citizenship or residency requirements?"
+        }
+      ]
+    },
+    {
+      "heading": "Get basic information & next steps",
+      "level": 2,
+      "content": [
+        {
+          "text": "Start with the basics and then get specific steps to follow."
+        }
+      ]
+    },
+    {
+      "heading": "Getting Social Security Benefits before 65",
+      "level": 2,
+      "content": [
+        {
+          "text": "Follow this path to sign up for Medicare if you’re getting retirement or disability benefits from Social Security at least 4 months before turning 65."
+        }
+      ]
+    },
+    {
+      "heading": "Getting Social Security Benefits after 65",
+      "level": 2,
+      "content": [
+        {
+          "text": "Follow this path to sign up for Medicare if you’re waiting until 65 or older to get retirement benefits from Social Security."
+        }
+      ]
+    },
+    {
+      "heading": "ESRD link",
+      "level": 2,
+      "content": [
+        {
+          "text": "Get specific information if you have End-Stage Renal Disease (ESRD)"
+        }
+      ]
+    },
+    {
+      "heading": "Not sure which path is right for you?",
+      "level": 2,
+      "content": [
+        {
+          "text": "Learn about less common paths to getting started with Medicare."
+        }
+      ]
+    },
+    {
+      "heading": "Quick tasks",
+      "level": 2,
+      "content": [
+        {
+          "text": "Understand the parts of Medicare"
+        },
+        {
+          "text": "Review your coverage options"
+        },
+        {
+          "text": "Check when you can sign up"
+        },
+        {
+          "text": "Find out how to sign up"
+        },
+        {
+          "text": "Learn about costs"
+        },
+        {
+          "text": "Talk to someone"
+        }
+      ]
+    }
+  ],
+  "expected_sections": [],
+  "missing_expected_sections": [],
+  "candidate_requirements": [
+    {
+      "locator": "Get started with Medicare",
+      "text": "Medicare is health insurance for people 65 or older who meet citizenship or residency requirements. You may be eligible to get Medicare earlier if you have a disability, End-Stage Renal Disease (ESRD), or ALS (also called Lou Gehrig’s disease)."
+    },
+    {
+      "locator": "Get started with Medicare",
+      "text": "What are Medicare's citizenship or residency requirements?"
+    }
+  ],
+  "source_id": "medicare_start-f3a364c71f5d1449",
+  "seed_id": "medicare_start",
+  "program_ids": [
+    "medicare_eligibility"
+  ],
+  "review_required": true,
+  "extracted_on": "2026-10-06"
+}

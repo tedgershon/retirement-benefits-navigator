@@ -1,0 +1,233 @@
+{
+  "adapter": "va",
+  "url": "https://www.va.gov/pension/eligibility/",
+  "sections": [
+    {
+      "heading": "Eligibility for Veterans Pension",
+      "level": 1,
+      "content": [
+        {
+          "text": "The Veterans Pension program provides monthly payments to wartime Veterans who meet certain age or disability requirements, and who have income and net worth within certain limits. Find out if you’re eligible for this benefit."
+        }
+      ]
+    },
+    {
+      "heading": "Am I eligible for Veterans Pension benefits?",
+      "level": 2,
+      "content": [
+        {
+          "text": "You may be eligible for the Veterans Pension program if you meet these requirements."
+        },
+        {
+          "text": "Both of these must be true:"
+        },
+        {
+          "text": "You didn’t receive a dishonorable discharge, and"
+        },
+        {
+          "text": "Your yearly family income and net worth meet certain limits set by Congress. Your net worth includes all personal property you own (except your house, your car, and most home furnishings), minus any debt you owe. Your net worth includes the net worth of your spouse. Find out about Veterans Pension rates"
+        },
+        {
+          "text": "And at least 1 of these must be true about your service:"
+        },
+        {
+          "text": "You started on active duty before September 8, 1980, and you served at least 90 days on active duty with at least 1 day during wartime, or"
+        },
+        {
+          "text": "You started on active duty as an enlisted person after September 7, 1980, and served at least 24 months or the full period for which you were called or ordered to active duty (with some exceptions) with at least 1 day during wartime, or"
+        },
+        {
+          "text": "You were an officer and started on active duty after October 16, 1981, and you hadn’t previously served on active duty for at least 24 months with at least 1 day during wartime"
+        },
+        {
+          "text": "Note: If you served on active-duty training (ADT) or inactive duty training (IADT), we may count your service if you have a service-connected condition resulting from that training."
+        },
+        {
+          "text": "And at least 1 of these must be true:"
+        },
+        {
+          "text": "You’re at least 65 years old, or"
+        },
+        {
+          "text": "You have a permanent and total disability, or"
+        },
+        {
+          "text": "You’re a patient in a nursing home for long-term care because of a disability, or"
+        },
+        {
+          "text": "You’re getting Social Security Disability Insurance or Supplemental Security Income"
+        }
+      ]
+    },
+    {
+      "heading": "How do I know if I served under an eligible wartime period?",
+      "level": 2,
+      "content": [
+        {
+          "text": "Under current law, we recognize the following wartime periods to decide eligibility for VA pension benefits:"
+        },
+        {
+          "text": "Mexican Border period (May 9, 1916, to April 5, 1917, for Veterans who served in Mexico, on its borders, or in adjacent waters)"
+        },
+        {
+          "text": "World War I (April 6, 1917, to November 11, 1918)"
+        },
+        {
+          "text": "World War II (December 7, 1941, to December 31, 1946)"
+        },
+        {
+          "text": "Korean conflict (June 27, 1950, to January 31, 1955)"
+        },
+        {
+          "text": "Vietnam War era for Veterans who served in the Republic of Vietnam (November 1, 1955, to May 7, 1975)"
+        },
+        {
+          "text": "Vietnam War era for Veterans who served outside the Republic of Vietnam (August 5, 1964, to May 7, 1975)"
+        },
+        {
+          "text": "Gulf War (August 2, 1990, through a future date to be set by law or presidential proclamation)"
+        }
+      ]
+    },
+    {
+      "heading": "What should I do if I received an other than honorable, bad conduct, or dishonorable discharge?",
+      "level": 2,
+      "content": [
+        {
+          "text": "If you’ve received 1 of these discharge statuses, you may not be eligible for VA pension benefits."
+        },
+        {
+          "text": "There are 2 ways you can try to qualify:"
+        },
+        {
+          "text": "Apply for a discharge upgrade"
+        },
+        {
+          "text": "Ask for a VA Character of Discharge review"
+        },
+        {
+          "text": "Learn about applying for a discharge upgrade and requesting a Character of Discharge review"
+        }
+      ]
+    },
+    {
+      "heading": "If I have dependents, will I get a higher payment amount for my Veterans Pension benefit?",
+      "level": 2,
+      "content": [
+        {
+          "text": "You may be eligible for a higher monthly payment if you have 1 of these dependents:"
+        },
+        {
+          "text": "A spouse"
+        },
+        {
+          "text": "A child under age 18"
+        },
+        {
+          "text": "A child between 18 and 23 years old who attends school"
+        },
+        {
+          "text": "A child over age 18 who is permanently incapable of self-support (needs another person to help perform daily activities)"
+        }
+      ]
+    },
+    {
+      "heading": "How do I apply?",
+      "level": 2,
+      "content": [
+        {
+          "text": "You can apply online right now."
+        },
+        {
+          "text": "Or you can apply by mail, in person, or with the help of a trained professional."
+        },
+        {
+          "text": "Learn more about how to apply"
+        }
+      ]
+    },
+    {
+      "heading": "Other helpful information",
+      "level": 2,
+      "content": [
+        {
+          "text": "Learn about the differences between pension benefits and disability compensation, eligibility requirements, and how we determine payment amounts."
+        },
+        {
+          "text": "Find out if you can get a $90 monthly VA pension payment if you live in a Medicaid-covered nursing facility and have no dependents."
+        },
+        {
+          "text": "Last updated: September 3, 2026"
+        }
+      ]
+    }
+  ],
+  "expected_sections": [
+    "pension"
+  ],
+  "missing_expected_sections": [],
+  "candidate_requirements": [
+    {
+      "locator": "Eligibility for Veterans Pension",
+      "text": "The Veterans Pension program provides monthly payments to wartime Veterans who meet certain age or disability requirements, and who have income and net worth within certain limits. Find out if you’re eligible for this benefit."
+    },
+    {
+      "locator": "Am I eligible for Veterans Pension benefits?",
+      "text": "You may be eligible for the Veterans Pension program if you meet these requirements."
+    },
+    {
+      "locator": "Am I eligible for Veterans Pension benefits?",
+      "text": "Both of these must be true:"
+    },
+    {
+      "locator": "Am I eligible for Veterans Pension benefits?",
+      "text": "Your yearly family income and net worth meet certain limits set by Congress. Your net worth includes all personal property you own (except your house, your car, and most home furnishings), minus any debt you owe. Your net worth includes the net worth of your spouse. Find out about Veterans Pension rates"
+    },
+    {
+      "locator": "Am I eligible for Veterans Pension benefits?",
+      "text": "And at least 1 of these must be true about your service:"
+    },
+    {
+      "locator": "Am I eligible for Veterans Pension benefits?",
+      "text": "You started on active duty before September 8, 1980, and you served at least 90 days on active duty with at least 1 day during wartime, or"
+    },
+    {
+      "locator": "Am I eligible for Veterans Pension benefits?",
+      "text": "You started on active duty as an enlisted person after September 7, 1980, and served at least 24 months or the full period for which you were called or ordered to active duty (with some exceptions) with at least 1 day during wartime, or"
+    },
+    {
+      "locator": "Am I eligible for Veterans Pension benefits?",
+      "text": "You were an officer and started on active duty after October 16, 1981, and you hadn’t previously served on active duty for at least 24 months with at least 1 day during wartime"
+    },
+    {
+      "locator": "Am I eligible for Veterans Pension benefits?",
+      "text": "And at least 1 of these must be true:"
+    },
+    {
+      "locator": "Am I eligible for Veterans Pension benefits?",
+      "text": "You’re getting Social Security Disability Insurance or Supplemental Security Income"
+    },
+    {
+      "locator": "How do I know if I served under an eligible wartime period?",
+      "text": "Under current law, we recognize the following wartime periods to decide eligibility for VA pension benefits:"
+    },
+    {
+      "locator": "What should I do if I received an other than honorable, bad conduct, or dishonorable discharge?",
+      "text": "If you’ve received 1 of these discharge statuses, you may not be eligible for VA pension benefits."
+    },
+    {
+      "locator": "If I have dependents, will I get a higher payment amount for my Veterans Pension benefit?",
+      "text": "You may be eligible for a higher monthly payment if you have 1 of these dependents:"
+    },
+    {
+      "locator": "Other helpful information",
+      "text": "Learn about the differences between pension benefits and disability compensation, eligibility requirements, and how we determine payment amounts."
+    }
+  ],
+  "source_id": "va_veterans_pension-884f2c594deea9f1",
+  "seed_id": "va_veterans_pension",
+  "program_ids": [
+    "va_veterans_pension"
+  ],
+  "review_required": true
+}

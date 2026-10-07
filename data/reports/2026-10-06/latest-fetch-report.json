@@ -1,0 +1,163 @@
+[
+  {
+    "seed_id": "ssa_retirement",
+    "status": "failed",
+    "error": "403 Client Error: Forbidden for url: https://www.ssa.gov/retirement",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "ssa_family",
+    "status": "failed",
+    "error": "403 Client Error: Forbidden for url: https://www.ssa.gov/family",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "ssa_survivor",
+    "status": "failed",
+    "error": "403 Client Error: Forbidden for url: https://www.ssa.gov/survivor",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "ssa_survivor_eligibility",
+    "status": "failed",
+    "error": "403 Client Error: Forbidden for url: https://www.ssa.gov/survivor/eligibility",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "ssa_family_eligibility",
+    "status": "failed",
+    "error": "403 Client Error: Forbidden for url: https://www.ssa.gov/family/eligibility",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "ssa_ssi",
+    "status": "failed",
+    "error": "403 Client Error: Forbidden for url: https://www.ssa.gov/ssi/eligibility",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "ssa_ssi_detail",
+    "status": "failed",
+    "error": "403 Client Error: Forbidden for url: https://www.ssa.gov/ssi/text-eligibility-ussi.htm",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "medicare_start",
+    "status": "saved",
+    "source_id": "medicare_start-f3a364c71f5d1449",
+    "fetched_at": "2026-10-06T01:54:52.772251+00:00",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "medicare_other_paths",
+    "status": "saved",
+    "source_id": "medicare_other_paths-d7d2692dd6995310",
+    "fetched_at": "2026-10-06T01:57:00.054726+00:00",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "medicare_sign_up",
+    "status": "saved",
+    "source_id": "medicare_sign_up-6ca4a5fb2ada467b",
+    "fetched_at": "2026-10-06T01:57:00.288878+00:00",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "medicare_extra_help",
+    "status": "saved",
+    "source_id": "medicare_extra_help-cebdd5ff5fabfc52",
+    "fetched_at": "2026-10-06T01:55:06.401707+00:00",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "cms_extra_help",
+    "status": "saved",
+    "source_id": "cms_extra_help-f25d2baa454291b9",
+    "fetched_at": "2026-10-06T01:55:07.529584+00:00",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "va_veterans_pension",
+    "status": "saved",
+    "source_id": "va_veterans_pension-3c7b49e3c6777114",
+    "fetched_at": "2026-10-06T03:34:35.180361+00:00",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "va_veterans_pension_rates",
+    "status": "saved",
+    "source_id": "va_veterans_pension_rates-624d6fa5f24b463c",
+    "fetched_at": "2026-10-06T03:34:35.599846+00:00",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "va_survivors_pension",
+    "status": "saved",
+    "source_id": "va_survivors_pension-a3303ab204ed68ce",
+    "fetched_at": "2026-10-06T03:34:35.993906+00:00",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "va_survivors_pension_rates",
+    "status": "saved",
+    "source_id": "va_survivors_pension_rates-3c6546033a62eb4f",
+    "fetched_at": "2026-10-06T03:34:36.361653+00:00",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "hhs_poverty_guidelines",
+    "status": "saved",
+    "source_id": "hhs_poverty_guidelines-a89d26fd6fa5beba",
+    "fetched_at": "2026-10-06T01:54:53.736674+00:00",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "uscode_social_security_benefits",
+    "status": "saved",
+    "source_id": "uscode_social_security_benefits-1af74442e1b2b920",
+    "fetched_at": "2026-10-06T03:32:37.506926+00:00",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "uscode_ssi",
+    "status": "saved",
+    "source_id": "uscode_ssi-0dccd5cd82b405e7",
+    "fetched_at": "2026-10-06T03:32:37.918185+00:00",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "uscode_medicare_part_a",
+    "status": "saved",
+    "source_id": "uscode_medicare_part_a-2ef974f387309fd0",
+    "fetched_at": "2026-10-06T03:32:38.329399+00:00",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "uscode_medicare_part_b",
+    "status": "saved",
+    "source_id": "uscode_medicare_part_b-9660d17646025751",
+    "fetched_at": "2026-10-06T03:32:38.713176+00:00",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "uscode_extra_help",
+    "status": "saved",
+    "source_id": "uscode_extra_help-90ce186fe259542e",
+    "fetched_at": "2026-10-06T03:32:39.220313+00:00",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "uscode_veterans_pension",
+    "status": "saved",
+    "source_id": "uscode_veterans_pension-91027a9670b4020f",
+    "fetched_at": "2026-10-06T03:32:39.691088+00:00",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  },
+  {
+    "seed_id": "uscode_survivors_pension",
+    "status": "saved",
+    "source_id": "uscode_survivors_pension-ce1cc098d31b1c23",
+    "fetched_at": "2026-10-06T03:32:40.115480+00:00",
+    "checked_at": "2026-10-06T03:34:33.250591+00:00"
+  }
+]

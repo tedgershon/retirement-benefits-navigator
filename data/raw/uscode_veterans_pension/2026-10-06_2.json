@@ -1,0 +1,13 @@
+{
+  "source_id": "uscode_veterans_pension-91027a9670b4020f",
+  "seed_id": "uscode_veterans_pension",
+  "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title38/html/USCODE-2024-title38-partII-chap15-subchapII-other-dup1-sec1521.htm",
+  "document_type": "html",
+  "snapshot_path": "data\\raw\\uscode_veterans_pension\\2026-10-06_2.html",
+  "content_hash": "91027a9670b4020f321170e9bd8147b638ab97006d724f16622eb42bc1c4409d",
+  "fetched_at": "2026-10-06T03:32:39.691088+00:00",
+  "adapter": "statute",
+  "program_ids": [
+    "va_veterans_pension"
+  ]
+}

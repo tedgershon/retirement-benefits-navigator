@@ -1,0 +1,13 @@
+{
+  "source_id": "uscode_survivors_pension-38b4b16b614b5adc",
+  "seed_id": "uscode_survivors_pension",
+  "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title38/pdf/USCODE-2024-title38-partII-chap15-subchapIII-other-dup1-sec1541.pdf",
+  "document_type": "pdf",
+  "snapshot_path": "data\\raw\\uscode_survivors_pension\\2026-10-06_1.pdf",
+  "content_hash": "38b4b16b614b5adcc7fec30a7c6b2036b1c0aea499fafe2b7d0031407a7a301b",
+  "fetched_at": "2026-10-06T03:31:31.109316+00:00",
+  "adapter": "statute",
+  "program_ids": [
+    "va_survivors_pension"
+  ]
+}

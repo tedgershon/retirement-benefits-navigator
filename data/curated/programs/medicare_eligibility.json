@@ -1,0 +1,174 @@
+{
+  "program_id": "medicare_eligibility",
+  "name": "Medicare eligibility",
+  "agency": "Centers for Medicare & Medicaid Services",
+  "family": "medicare",
+  "summary": "Federal health coverage with age and certain disability or medical pathways; coverage parts and enrollment timing require separate review.",
+  "application_url": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/how-do-i-sign-up-for-medicare",
+  "as_of": "2026-10-06",
+  "eligibility": {
+    "all": [
+      {
+        "field": "medicare_citizenship_or_residency_requirement_met",
+        "operator": "==",
+        "evidence": [
+          {
+            "source_ref": "source_5",
+            "locator": "Get started with Medicare"
+          }
+        ],
+        "value": true
+      },
+      {
+        "any": [
+          {
+            "field": "age_years",
+            "operator": ">=",
+            "evidence": [
+              {
+                "source_ref": "source_5",
+                "locator": "Get started with Medicare"
+              }
+            ],
+            "threshold": "ordinary_age_years"
+          },
+          {
+            "field": "social_security_disability_benefit_months",
+            "operator": ">=",
+            "evidence": [
+              {
+                "source_ref": "source_6",
+                "locator": "Get disability benefits; Have ALS; Have ESRD"
+              }
+            ],
+            "threshold": "ordinary_disability_wait_months"
+          },
+          {
+            "field": "als_with_social_security_disability_benefits",
+            "operator": "==",
+            "evidence": [
+              {
+                "source_ref": "source_6",
+                "locator": "Get disability benefits; Have ALS; Have ESRD"
+              }
+            ],
+            "value": true
+          },
+          {
+            "all": [
+              {
+                "field": "esrd_medicare_pathway_confirmed",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_6",
+                    "locator": "Get disability benefits; Have ALS; Have ESRD"
+                  }
+                ],
+                "value": true
+              },
+              {
+                "unknown": "ESRD eligibility and coverage-start rules are outside this modeled pathway screen.",
+                "evidence": [
+                  {
+                    "source_ref": "source_6",
+                    "locator": "Get disability benefits; Have ALS; Have ESRD"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_ref": "source_1",
+        "locator": "42 U.S.C. § 1395c; statutory context"
+      },
+      {
+        "source_ref": "source_2",
+        "locator": "42 U.S.C. § 1395o; statutory context"
+      }
+    ]
+  },
+  "thresholds": {
+    "ordinary_age_years": {
+      "unit": "years",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 65
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_5",
+          "locator": "Get started with Medicare"
+        }
+      ]
+    },
+    "ordinary_disability_wait_months": {
+      "unit": "months",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 24
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_6",
+          "locator": "Get disability benefits; Have ALS; Have ESRD"
+        }
+      ]
+    }
+  },
+  "tags": [
+    "age_65_pathway",
+    "disability_benefits_24_month_pathway",
+    "als_pathway",
+    "esrd_pathway",
+    "citizenship_or_residency_requirement"
+  ],
+  "follow_up": [
+    {
+      "kind": "enrollment",
+      "description": "Check whether Medicare enrollment is automatic or requires sign-up, and verify the applicable enrollment period and coverage start.",
+      "evidence": [{"source_ref": "source_7", "locator": "How do I sign up for Medicare?; automatic versus active enrollment"}]
+    }
+  ],
+  "sources": {
+    "source_1": {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title42/html/USCODE-2024-title42-chap7-subchapXVIII-partA-sec1395c.htm",
+      "snapshot_source_id": "uscode_medicare_part_a-2ef974f387309fd0",
+      "sidecar_path": "data/raw/uscode_medicare_part_a/2026-10-06_2.json"
+    },
+    "source_2": {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title42/html/USCODE-2024-title42-chap7-subchapXVIII-partB-sec1395o.htm",
+      "snapshot_source_id": "uscode_medicare_part_b-9660d17646025751",
+      "sidecar_path": "data/raw/uscode_medicare_part_b/2026-10-06_2.json"
+    },
+    "source_3": {
+      "url": "https://www.govinfo.gov/link/uscode/42/1395c"
+    },
+    "source_4": {
+      "url": "https://www.govinfo.gov/link/uscode/42/1395o"
+    },
+    "source_5": {
+      "url": "https://www.medicare.gov/basics/get-started-with-medicare",
+      "snapshot_source_id": "medicare_start-f3a364c71f5d1449",
+      "sidecar_path": "data/raw/medicare_start/2026-10-06.json"
+    },
+    "source_6": {
+      "url": "https://www.medicare.gov/basics/get-started-with-medicare/other-paths",
+      "snapshot_source_id": "medicare_other_paths-d7d2692dd6995310",
+      "sidecar_path": "data/raw/medicare_other_paths/2026-10-06.json"
+    },
+    "source_7": {
+      "url": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/how-do-i-sign-up-for-medicare"
+    }
+  }
+}

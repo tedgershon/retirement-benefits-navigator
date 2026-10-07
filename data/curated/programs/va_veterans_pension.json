@@ -1,0 +1,629 @@
+{
+  "program_id": "va_veterans_pension",
+  "name": "VA Veterans Pension",
+  "agency": "Department of Veterans Affairs",
+  "family": "va_pension",
+  "summary": "Monthly pension for qualifying wartime Veterans subject to service, age or disability, income, and net worth requirements.",
+  "application_url": "https://www.va.gov/pension/how-to-apply/",
+  "as_of": "2026-10-06",
+  "eligibility": {
+    "all": [
+      {
+        "field": "va_discharge_qualifies",
+        "operator": "==",
+        "evidence": [
+          {
+            "source_ref": "source_5",
+            "locator": "Am I eligible for Veterans Pension benefits?"
+          }
+        ],
+        "value": true
+      },
+      {
+        "field": "wartime_active_service_days",
+        "operator": ">=",
+        "evidence": [
+          {
+            "source_ref": "source_5",
+            "locator": "Am I eligible for Veterans Pension benefits?"
+          }
+        ],
+        "threshold": "wartime_service_days"
+      },
+      {
+        "field": "va_pension_wartime_service_requirement_met",
+        "operator": "==",
+        "value": true,
+        "evidence": [
+          {
+            "source_ref": "source_3",
+            "locator": "38 U.S.C. 1521(j), alternative wartime-service routes"
+          }
+        ]
+      },
+      {
+        "any": [
+          {
+            "all": [
+              {
+                "field": "service_entry_route",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_5",
+                    "locator": "Am I eligible for Veterans Pension benefits?"
+                  }
+                ],
+                "value": "before_1980_09_08"
+              },
+              {
+                "field": "active_service_days",
+                "operator": ">=",
+                "evidence": [
+                  {
+                    "source_ref": "source_5",
+                    "locator": "Am I eligible for Veterans Pension benefits?"
+                  }
+                ],
+                "threshold": "pre_1980_service_days"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "field": "service_entry_route",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_5",
+                    "locator": "Am I eligible for Veterans Pension benefits?"
+                  }
+                ],
+                "value": "after_1980_enlisted"
+              },
+              {
+                "any": [
+                  {
+                    "field": "continuous_active_service_months",
+                    "operator": ">=",
+                    "evidence": [
+                      {
+                        "source_ref": "source_5",
+                        "locator": "Am I eligible for Veterans Pension benefits?"
+                      }
+                    ],
+                    "threshold": "post_1980_service_months"
+                  },
+                  {
+                    "field": "served_full_call_period",
+                    "operator": "==",
+                    "evidence": [
+                      {
+                        "source_ref": "source_5",
+                        "locator": "Am I eligible for Veterans Pension benefits?"
+                      }
+                    ],
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "field": "service_entry_route",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_5",
+                    "locator": "Am I eligible for Veterans Pension benefits?"
+                  }
+                ],
+                "value": "after_1981_officer"
+              },
+              {
+                "any": [
+                  {
+                    "field": "prior_24_month_active_service",
+                    "operator": "==",
+                    "value": true,
+                    "evidence": [
+                      {
+                        "source_ref": "source_1",
+                        "locator": "38 CFR 3.12a(c)(2), prior 24 continuous months exception; web tool inspection, no raw snapshot"
+                      }
+                    ]
+                  },
+                  {
+                    "all": [
+                      {
+                        "field": "prior_24_month_active_service",
+                        "operator": "==",
+                        "evidence": [
+                          {
+                            "source_ref": "source_5",
+                            "locator": "Am I eligible for Veterans Pension benefits?"
+                          }
+                        ],
+                        "value": false
+                      },
+                      {
+                        "any": [
+                          {
+                            "field": "continuous_active_service_months",
+                            "operator": ">=",
+                            "threshold": "post_1980_service_months",
+                            "evidence": [
+                              {
+                                "source_ref": "source_1",
+                                "locator": "38 CFR 3.12a(a)-(c), 24 continuous months or full call period; web tool inspection, no raw snapshot"
+                              }
+                            ]
+                          },
+                          {
+                            "field": "served_full_call_period",
+                            "operator": "==",
+                            "value": true,
+                            "evidence": [
+                              {
+                                "source_ref": "source_1",
+                                "locator": "38 CFR 3.12a(a)(1)(ii), full call period; web tool inspection, no raw snapshot"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "field": "va_minimum_duty_or_service_exception_verified",
+            "operator": "==",
+            "value": true,
+            "evidence": [
+              {
+                "source_ref": "source_1",
+                "locator": "38 CFR 3.12a(d), early out, hardship and disability exceptions; 38 USC 1521(j), wartime-service routes; web tool inspection, no raw snapshot"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "any": [
+          {
+            "field": "age_years",
+            "operator": ">=",
+            "evidence": [
+              {
+                "source_ref": "source_5",
+                "locator": "Am I eligible for Veterans Pension benefits?"
+              }
+            ],
+            "threshold": "veteran_age_years"
+          },
+          {
+            "all": [
+              {
+                "field": "va_permanent_total_disability_met",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_5",
+                    "locator": "Am I eligible for Veterans Pension benefits?"
+                  }
+                ],
+                "value": true
+              },
+              {
+                "unknown": "Under-65 disability or institutional pathway requires further VA rule review.",
+                "evidence": [
+                  {
+                    "source_ref": "source_5",
+                    "locator": "Am I eligible for Veterans Pension benefits?"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "field": "nursing_home_long_term_disability_care",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_5",
+                    "locator": "Am I eligible for Veterans Pension benefits?"
+                  }
+                ],
+                "value": true
+              },
+              {
+                "unknown": "Under-65 disability or institutional pathway requires further VA rule review.",
+                "evidence": [
+                  {
+                    "source_ref": "source_5",
+                    "locator": "Am I eligible for Veterans Pension benefits?"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "field": "receives_ssdi_or_ssi",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_5",
+                    "locator": "Am I eligible for Veterans Pension benefits?"
+                  }
+                ],
+                "value": true
+              },
+              {
+                "unknown": "Under-65 disability or institutional pathway requires further VA rule review.",
+                "evidence": [
+                  {
+                    "source_ref": "source_5",
+                    "locator": "Am I eligible for Veterans Pension benefits?"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field": "va_net_worth_for_pension_cents",
+        "operator": "<=",
+        "evidence": [
+          {
+            "source_ref": "source_7",
+            "locator": "Net worth limit; Maximum Annual Pension Rate tables, December 1, 2025"
+          }
+        ],
+        "threshold": "net_worth_limit"
+      },
+      {
+        "field": "va_mapr_case_and_tier_verified",
+        "operator": "==",
+        "value": true,
+        "evidence": [
+          {
+            "source_ref": "source_6",
+            "locator": "2026 MAPR tables; dependent count and Housebound/Aid and Attendance tier; web tool inspection, no raw snapshot"
+          }
+        ]
+      },
+      {
+        "field": "va_income_for_purposes_annual_cents",
+        "operator": "<",
+        "evidence": [
+          {
+            "source_ref": "source_7",
+            "locator": "Net worth limit; Maximum Annual Pension Rate tables, December 1, 2025"
+          }
+        ],
+        "threshold": "mapr_2026",
+        "selectors": {
+          "dependents": "va_dependents_case",
+          "tier": "va_pension_tier"
+        }
+      },
+      {
+        "field": "va_asset_transfer_penalty_not_in_effect",
+        "operator": "==",
+        "evidence": [
+          {
+            "source_ref": "source_2",
+            "locator": "38 CFR 3.276(b)-(e), 36-month lookback, covered transfers and penalty exceptions; web tool inspection, no raw snapshot"
+          }
+        ],
+        "value": true
+      }
+    ],
+    "evidence": [
+      {
+        "source_ref": "source_3",
+        "locator": "38 U.S.C. § 1521; statutory context"
+      },
+      {
+        "source_ref": "source_1",
+        "locator": "38 CFR 3.12a, minimum duty and exceptions; web tool inspection, no raw snapshot"
+      },
+      {
+        "source_ref": "source_2",
+        "locator": "38 CFR 3.276, asset transfers and penalty periods; web tool inspection, no raw snapshot"
+      }
+    ]
+  },
+  "thresholds": {
+    "pre_1980_service_days": {
+      "unit": "days",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 90
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_5",
+          "locator": "Am I eligible for Veterans Pension benefits?"
+        }
+      ]
+    },
+    "post_1980_service_months": {
+      "unit": "months",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 24
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_5",
+          "locator": "Am I eligible for Veterans Pension benefits?"
+        }
+      ]
+    },
+    "wartime_service_days": {
+      "unit": "days",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 1
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_5",
+          "locator": "Am I eligible for Veterans Pension benefits?"
+        }
+      ]
+    },
+    "veteran_age_years": {
+      "unit": "years",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 65
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_5",
+          "locator": "Am I eligible for Veterans Pension benefits?"
+        }
+      ]
+    },
+    "net_worth_limit": {
+      "unit": "usd_cents",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 16369900
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_7",
+          "locator": "Net worth limit; Maximum Annual Pension Rate tables, December 1, 2025"
+        }
+      ],
+      "effective_from": "2025-12-01",
+      "effective_to": "2026-12-01"
+    },
+    "mapr_2026": {
+      "unit": "usd_cents",
+      "period": "annual",
+      "rows": [
+        {
+          "selectors": {
+            "dependents": "none",
+            "tier": "basic"
+          },
+          "value": 1744100
+        },
+        {
+          "selectors": {
+            "dependents": "none",
+            "tier": "housebound"
+          },
+          "value": 2131300
+        },
+        {
+          "selectors": {
+            "dependents": "none",
+            "tier": "aid_attendance"
+          },
+          "value": 2909300
+        },
+        {
+          "selectors": {
+            "dependents": "one",
+            "tier": "basic"
+          },
+          "value": 2283900
+        },
+        {
+          "selectors": {
+            "dependents": "one",
+            "tier": "housebound"
+          },
+          "value": 2671000
+        },
+        {
+          "selectors": {
+            "dependents": "one",
+            "tier": "aid_attendance"
+          },
+          "value": 3448800
+        },
+        {
+          "selectors": {
+            "dependents": "two_veterans_no_child",
+            "tier": "basic"
+          },
+          "value": 2283900
+        },
+        {
+          "selectors": {
+            "dependents": "two_veterans_no_child",
+            "tier": "one_housebound"
+          },
+          "value": 2671000
+        },
+        {
+          "selectors": {
+            "dependents": "two_veterans_no_child",
+            "tier": "both_housebound"
+          },
+          "value": 3058000
+        },
+        {
+          "selectors": {
+            "dependents": "two_veterans_no_child",
+            "tier": "one_aid_attendance"
+          },
+          "value": 3448800
+        },
+        {
+          "selectors": {
+            "dependents": "two_veterans_no_child",
+            "tier": "one_housebound_one_aid_attendance"
+          },
+          "value": 3835000
+        },
+        {
+          "selectors": {
+            "dependents": "two_veterans_no_child",
+            "tier": "both_aid_attendance"
+          },
+          "value": 4614300
+        },
+        {
+          "selectors": {
+            "dependents": "additional_dependents",
+            "tier": "basic"
+          },
+          "input_field": "va_applicable_mapr_cents"
+        },
+        {
+          "selectors": {
+            "dependents": "additional_dependents",
+            "tier": "housebound"
+          },
+          "input_field": "va_applicable_mapr_cents"
+        },
+        {
+          "selectors": {
+            "dependents": "additional_dependents",
+            "tier": "aid_attendance"
+          },
+          "input_field": "va_applicable_mapr_cents"
+        },
+        {
+          "selectors": {
+            "dependents": "two_veterans_with_children",
+            "tier": "basic"
+          },
+          "input_field": "va_applicable_mapr_cents"
+        },
+        {
+          "selectors": {
+            "dependents": "two_veterans_with_children",
+            "tier": "one_housebound"
+          },
+          "input_field": "va_applicable_mapr_cents"
+        },
+        {
+          "selectors": {
+            "dependents": "two_veterans_with_children",
+            "tier": "both_housebound"
+          },
+          "input_field": "va_applicable_mapr_cents"
+        },
+        {
+          "selectors": {
+            "dependents": "two_veterans_with_children",
+            "tier": "one_aid_attendance"
+          },
+          "input_field": "va_applicable_mapr_cents"
+        },
+        {
+          "selectors": {
+            "dependents": "two_veterans_with_children",
+            "tier": "one_housebound_one_aid_attendance"
+          },
+          "input_field": "va_applicable_mapr_cents"
+        },
+        {
+          "selectors": {
+            "dependents": "two_veterans_with_children",
+            "tier": "both_aid_attendance"
+          },
+          "input_field": "va_applicable_mapr_cents"
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_7",
+          "locator": "Net worth limit; Maximum Annual Pension Rate tables, December 1, 2025"
+        }
+      ],
+      "effective_from": "2025-12-01",
+      "effective_to": "2026-12-01"
+    }
+  },
+  "tags": [
+    "wartime_service_required",
+    "veteran_required",
+    "age_65_or_disability_pathway",
+    "va_income_for_purposes_limit",
+    "net_worth_limit_applies"
+  ],
+  "sources": {
+    "source_1": {
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title38-vol1/pdf/CFR-2025-title38-vol1-sec3-12a.pdf"
+    },
+    "source_2": {
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title38-vol1/pdf/CFR-2025-title38-vol1-sec3-276.pdf"
+    },
+    "source_3": {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title38/html/USCODE-2024-title38-partII-chap15-subchapII-other-dup1-sec1521.htm",
+      "snapshot_source_id": "uscode_veterans_pension-91027a9670b4020f",
+      "sidecar_path": "data/raw/uscode_veterans_pension/2026-10-06_2.json"
+    },
+    "source_4": {
+      "url": "https://www.govinfo.gov/link/uscode/38/1521"
+    },
+    "source_5": {
+      "url": "https://www.va.gov/pension/eligibility/",
+      "snapshot_source_id": "va_veterans_pension-54ab3e1b0e31336f",
+      "sidecar_path": "data/raw/va_veterans_pension/2026-10-06_7.json"
+    },
+    "source_6": {
+      "url": "https://www.va.gov/pension/veterans-pension-rates/"
+    },
+    "source_7": {
+      "url": "https://www.va.gov/pension/veterans-pension-rates/",
+      "snapshot_source_id": "va_veterans_pension_rates-1239ee0c4a5b1619",
+      "sidecar_path": "data/raw/va_veterans_pension_rates/2026-10-06_7.json"
+    }
+  }
+}

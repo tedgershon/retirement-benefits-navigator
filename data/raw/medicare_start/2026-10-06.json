@@ -1,0 +1,13 @@
+{
+  "source_id": "medicare_start-f3a364c71f5d1449",
+  "seed_id": "medicare_start",
+  "url": "https://www.medicare.gov/basics/get-started-with-medicare",
+  "document_type": "html",
+  "snapshot_path": "data\\raw\\medicare_start\\2026-10-06.html",
+  "content_hash": "f3a364c71f5d1449f2ab581227a326ee2528c04a307b118da9db76275705db43",
+  "fetched_at": "2026-10-06T01:54:52.772251+00:00",
+  "adapter": "medicare",
+  "program_ids": [
+    "medicare_eligibility"
+  ]
+}

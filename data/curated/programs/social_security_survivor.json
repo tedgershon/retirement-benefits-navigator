@@ -1,0 +1,802 @@
+{
+  "program_id": "social_security_survivor",
+  "name": "Social Security Survivor benefits",
+  "agency": "Social Security Administration",
+  "family": "social_security",
+  "summary": "Monthly benefits for certain family members of a person who worked and paid Social Security taxes before death.",
+  "application_url": "https://www.ssa.gov/survivor",
+  "as_of": "2026-10-06",
+  "eligibility": {
+    "all": [
+      {
+        "field": "deceased_worker_insured_for_survivors",
+        "operator": "==",
+        "evidence": [
+          {
+            "source_ref": "source_11",
+            "locator": "Who can get Survivor benefits; insured worker requirement"
+          }
+        ],
+        "value": true
+      },
+      {
+        "any": [
+          {
+            "all": [
+              {
+                "field": "relationship_to_decedent",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_11",
+                    "locator": "Spouses and ex-spouses; Children; Dependent parents"
+                  }
+                ],
+                "value": "spouse"
+              },
+              {
+                "field": "deceased_worker_fully_or_transitionally_insured_for_widow",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_4",
+                    "locator": "RS 00207.001 A.1.b.1, widow(er) worker insured status"
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "field": "marriage_duration_months",
+                    "operator": ">=",
+                    "threshold": "ordinary_widow_marriage_months",
+                    "evidence": [
+                      {
+                        "source_ref": "source_4",
+                        "locator": "RS 00207.001 A.1.a.2, nine-month marriage"
+                      }
+                    ]
+                  },
+                  {
+                    "field": "ssa_widow_marriage_duration_exception_met",
+                    "operator": "==",
+                    "value": true,
+                    "evidence": [
+                      {
+                        "source_ref": "source_4",
+                        "locator": "RS 00207.001 A.1.a.3-9, alternative relationship requirements"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "field": "age_years",
+                    "operator": ">=",
+                    "evidence": [
+                      {
+                        "source_ref": "source_11",
+                        "locator": "Spouses and ex-spouses; Children; Dependent parents"
+                      }
+                    ],
+                    "threshold": "widow_age_years"
+                  },
+                  {
+                    "all": [
+                      {
+                        "field": "age_years",
+                        "operator": ">=",
+                        "evidence": [
+                          {
+                            "source_ref": "source_11",
+                            "locator": "Spouses and ex-spouses; Children; Dependent parents"
+                          }
+                        ],
+                        "threshold": "disabled_widow_age_years"
+                      },
+                      {
+                        "field": "ssa_disabled_widow_requirement_met",
+                        "operator": "==",
+                        "evidence": [
+                          {
+                            "source_ref": "source_11",
+                            "locator": "Spouses and ex-spouses; Children; Dependent parents"
+                          }
+                        ],
+                        "value": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "remarriage_rule_met",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_11",
+                    "locator": "Spouses and ex-spouses; Children; Dependent parents"
+                  }
+                ],
+                "value": true
+              },
+              {
+                "field": "ssa_survivor_own_rib_below_decedent_pia",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_4",
+                    "locator": "RS 00207.001 A.1.b.5, own retirement benefit comparison"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "field": "relationship_to_decedent",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_11",
+                    "locator": "Spouses and ex-spouses; Children; Dependent parents"
+                  }
+                ],
+                "value": "ex_spouse"
+              },
+              {
+                "field": "marriage_duration_years",
+                "operator": ">=",
+                "evidence": [
+                  {
+                    "source_ref": "source_11",
+                    "locator": "Spouses and ex-spouses; Children; Dependent parents"
+                  }
+                ],
+                "threshold": "divorced_survivor_marriage_years"
+              },
+              {
+                "field": "deceased_worker_fully_insured_for_divorced_survivor",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_4",
+                    "locator": "RS 00207.001 A.2.b.1, fully insured worker"
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "field": "age_years",
+                    "operator": ">=",
+                    "threshold": "widow_age_years",
+                    "evidence": [
+                      {
+                        "source_ref": "source_4",
+                        "locator": "RS 00207.001 A.2.b.2, age 60"
+                      }
+                    ]
+                  },
+                  {
+                    "all": [
+                      {
+                        "field": "age_years",
+                        "operator": ">=",
+                        "threshold": "disabled_widow_age_years",
+                        "evidence": [
+                          {
+                            "source_ref": "source_4",
+                            "locator": "RS 00207.001 A.3, disabled widow(er) age 50"
+                          }
+                        ]
+                      },
+                      {
+                        "field": "ssa_disabled_widow_requirement_met",
+                        "operator": "==",
+                        "value": true,
+                        "evidence": [
+                          {
+                            "source_ref": "source_4",
+                            "locator": "RS 00207.001 A.3, disability, prescribed period and waiting period"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "remarriage_rule_met",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_4",
+                    "locator": "RS 00207.001 A.2.b.3, unmarried or disregarded remarriage"
+                  }
+                ]
+              },
+              {
+                "field": "ssa_survivor_own_rib_below_decedent_pia",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_4",
+                    "locator": "RS 00207.001 A.2.b.5, own retirement benefit comparison"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "field": "relationship_to_decedent",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_11",
+                    "locator": "Spouses and ex-spouses; Children; Dependent parents"
+                  }
+                ],
+                "value": "child"
+              },
+              {
+                "field": "unmarried_child",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_11",
+                    "locator": "Spouses and ex-spouses; Children; Dependent parents"
+                  }
+                ],
+                "value": true
+              },
+              {
+                "field": "ssa_survivor_child_relationship_and_dependency_met",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_11",
+                    "locator": "Spouses and ex-spouses; Children; Dependent parents"
+                  }
+                ],
+                "value": true
+              },
+              {
+                "any": [
+                  {
+                    "field": "age_years",
+                    "operator": "<",
+                    "evidence": [
+                      {
+                        "source_ref": "source_3",
+                        "locator": "RS 00203.001 A.2.e, full-time student under age 19"
+                      }
+                    ],
+                    "threshold": "child_max_age_years"
+                  },
+                  {
+                    "all": [
+                      {
+                        "field": "ssa_student_age_19_deeming_exception_met",
+                        "operator": "==",
+                        "value": true,
+                        "evidence": [
+                          {
+                            "source_ref": "source_3",
+                            "locator": "RS 00203.001 A.2.e note, student deemed not age 19"
+                          }
+                        ]
+                      },
+                      {
+                        "field": "full_time_k12_student",
+                        "operator": "==",
+                        "value": true,
+                        "evidence": [
+                          {
+                            "source_ref": "source_1",
+                            "locator": "RS 00205.001 A, student benefits"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "all": [
+                      {
+                        "field": "age_years",
+                        "operator": "<",
+                        "evidence": [
+                          {
+                            "source_ref": "source_11",
+                            "locator": "Spouses and ex-spouses; Children; Dependent parents"
+                          }
+                        ],
+                        "threshold": "school_child_max_age_years"
+                      },
+                      {
+                        "field": "full_time_k12_student",
+                        "operator": "==",
+                        "evidence": [
+                          {
+                            "source_ref": "source_11",
+                            "locator": "Spouses and ex-spouses; Children; Dependent parents"
+                          }
+                        ],
+                        "value": true
+                      }
+                    ]
+                  },
+                  {
+                    "all": [
+                      {
+                        "field": "disability_began_before_age_22",
+                        "operator": "==",
+                        "evidence": [
+                          {
+                            "source_ref": "source_11",
+                            "locator": "Spouses and ex-spouses; Children; Dependent parents"
+                          }
+                        ],
+                        "value": true
+                      },
+                      {
+                        "field": "ssa_disabled_adult_child_requirement_met",
+                        "operator": "==",
+                        "evidence": [
+                          {
+                            "source_ref": "source_11",
+                            "locator": "Spouses and ex-spouses; Children; Dependent parents"
+                          }
+                        ],
+                        "value": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "unknown": "Survivor child and student routes require further SSA rule review.",
+                "evidence": [
+                  {
+                    "source_ref": "source_11",
+                    "locator": "Spouses and ex-spouses; Children; Dependent parents"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "field": "relationship_to_decedent",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_11",
+                    "locator": "Spouses and ex-spouses; Children; Dependent parents"
+                  }
+                ],
+                "value": "dependent_parent"
+              },
+              {
+                "field": "age_years",
+                "operator": ">=",
+                "evidence": [
+                  {
+                    "source_ref": "source_11",
+                    "locator": "Spouses and ex-spouses; Children; Dependent parents"
+                  }
+                ],
+                "threshold": "parent_age_years"
+              },
+              {
+                "field": "deceased_worker_fully_insured_for_parent",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_2",
+                    "locator": "RS 00209.001 A, parent of fully insured worker"
+                  }
+                ]
+              },
+              {
+                "field": "ssa_parent_one_half_support_met",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_2",
+                    "locator": "RS 00209.001 A, one-half support"
+                  }
+                ],
+                "value": true
+              },
+              {
+                "field": "ssa_parent_remarriage_rule_met",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_2",
+                    "locator": "RS 00209.001 A, marriage after worker death and exceptions"
+                  }
+                ]
+              },
+              {
+                "field": "ssa_parent_relationship_verified",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_2",
+                    "locator": "RS 00209.001 C, natural, adoptive or stepparent definition; web tool inspection, no raw snapshot"
+                  }
+                ]
+              },
+              {
+                "field": "ssa_parent_own_rib_below_original_parent_benefit",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_2",
+                    "locator": "RS 00209.001 A, own RIB comparison; web tool inspection, no raw snapshot"
+                  }
+                ]
+              },
+              {
+                "field": "ssa_parent_support_proof_timely",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_2",
+                    "locator": "RS 00209.001 A, proof of one-half support; web tool inspection, no raw snapshot"
+                  }
+                ]
+              },
+              {
+                "field": "ssa_parent_no_felonious_homicide_or_rrb_preclusion",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_2",
+                    "locator": "RS 00209.001 B, parent preclusions; web tool inspection, no raw snapshot"
+                  }
+                ]
+              },
+              {
+                "unknown": "Dependent-parent support and preclusion rules require further SSA review.",
+                "evidence": [
+                  {
+                    "source_ref": "source_11",
+                    "locator": "Spouses and ex-spouses; Children; Dependent parents"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "any": [
+                  {
+                    "field": "relationship_to_decedent",
+                    "operator": "==",
+                    "value": "spouse",
+                    "evidence": [
+                      {
+                        "source_ref": "source_5",
+                        "locator": "RS 00208.001 A-C, mother/father definition; web tool inspection, no raw snapshot"
+                      }
+                    ]
+                  },
+                  {
+                    "all": [
+                      {
+                        "field": "relationship_to_decedent",
+                        "operator": "==",
+                        "value": "ex_spouse",
+                        "evidence": [
+                          {
+                            "source_ref": "source_6",
+                            "locator": "RS 00208.010 A-B, final divorce; web tool inspection, no raw snapshot"
+                          }
+                        ]
+                      },
+                      {
+                        "field": "ssa_surviving_divorced_parent_child_relationship_met",
+                        "operator": "==",
+                        "value": true,
+                        "evidence": [
+                          {
+                            "source_ref": "source_6",
+                            "locator": "RS 00208.010 B, claimant natural or adopted child entitled on worker record; web tool inspection, no raw snapshot"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "deceased_worker_fully_or_currently_insured_for_mother_father",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_5",
+                    "locator": "RS 00208.001 C, insured worker; web tool inspection, no raw snapshot"
+                  }
+                ]
+              },
+              {
+                "field": "ssa_mother_father_relationship_duration_met",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_5",
+                    "locator": "RS 00208.001 C, relationship and duration cross-references; web tool inspection, no raw snapshot"
+                  }
+                ]
+              },
+              {
+                "field": "ssa_mother_father_remarriage_rule_met",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_5",
+                    "locator": "RS 00208.001 C, unmarried or permitted remarriage; web tool inspection, no raw snapshot"
+                  }
+                ]
+              },
+              {
+                "field": "ssa_mother_father_not_entitled_to_widow_benefit",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_5",
+                    "locator": "RS 00208.001 C, widow entitlement exclusion; web tool inspection, no raw snapshot"
+                  }
+                ]
+              },
+              {
+                "field": "ssa_mother_father_own_rib_below_unadjusted_benefit",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_5",
+                    "locator": "RS 00208.001 C, own RIB comparison; web tool inspection, no raw snapshot"
+                  }
+                ]
+              },
+              {
+                "field": "ssa_entitled_child_in_care_requirement_met",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_7",
+                    "locator": "RS 01310.001 A-D, entitled child under 16 or disabled and in care; web tool inspection, no raw snapshot"
+                  }
+                ]
+              },
+              {
+                "unknown": "Mother/father child-in-care route requires further SSA review.",
+                "evidence": [
+                  {
+                    "source_ref": "source_5",
+                    "locator": "RS 00208.001 A-C, mother/father definition; web tool inspection, no raw snapshot"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_ref": "source_8",
+        "locator": "42 U.S.C. § 402; statutory context"
+      },
+      {
+        "source_ref": "source_4",
+        "locator": "RS 00207.001 A-B, widow(er) and surviving divorced spouse; web tool inspection, no raw snapshot"
+      },
+      {
+        "source_ref": "source_3",
+        "locator": "RS 00203.001 A, child entitlement and student age; web tool inspection, no raw snapshot"
+      },
+      {
+        "source_ref": "source_2",
+        "locator": "RS 00209.001 A, parent requirements; web tool inspection, no raw snapshot"
+      },
+      {
+        "source_ref": "source_5",
+        "locator": "RS 00208.001 C, mother/father entitlement; web tool inspection, no raw snapshot"
+      },
+      {
+        "source_ref": "source_6",
+        "locator": "RS 00208.010 B, surviving divorced mother/father; web tool inspection, no raw snapshot"
+      },
+      {
+        "source_ref": "source_7",
+        "locator": "RS 01310.001 A-D, entitled child in care; web tool inspection, no raw snapshot"
+      }
+    ]
+  },
+  "thresholds": {
+    "ordinary_widow_marriage_months": {
+      "unit": "months",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 9
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_11",
+          "locator": "Spouses and ex-spouses; Children; Dependent parents"
+        }
+      ]
+    },
+    "widow_age_years": {
+      "unit": "years",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 60
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_11",
+          "locator": "Spouses and ex-spouses; Children; Dependent parents"
+        }
+      ]
+    },
+    "disabled_widow_age_years": {
+      "unit": "years",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 50
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_11",
+          "locator": "Spouses and ex-spouses; Children; Dependent parents"
+        }
+      ]
+    },
+    "divorced_survivor_marriage_years": {
+      "unit": "years",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 10
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_11",
+          "locator": "Spouses and ex-spouses; Children; Dependent parents"
+        }
+      ]
+    },
+    "child_max_age_years": {
+      "unit": "years",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 17
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_11",
+          "locator": "Spouses and ex-spouses; Children; Dependent parents"
+        }
+      ]
+    },
+    "school_child_max_age_years": {
+      "unit": "years",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 19
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_3",
+          "locator": "RS 00203.001 A.2.e, student under 19"
+        }
+      ]
+    },
+    "parent_age_years": {
+      "unit": "years",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 62
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_11",
+          "locator": "Spouses and ex-spouses; Children; Dependent parents"
+        }
+      ]
+    }
+  },
+  "tags": [
+    "deceased_insured_worker_required",
+    "surviving_spouse_pathway",
+    "divorced_survivor_pathway",
+    "surviving_child_pathway",
+    "dependent_parent_pathway"
+  ],
+  "sources": {
+    "source_1": {
+      "url": "https://secure.ssa.gov/apps10/poms.nsf/lnx/0300205001"
+    },
+    "source_2": {
+      "url": "https://secure.ssa.gov/apps10/poms.nsf/lnx/0300209001"
+    },
+    "source_3": {
+      "url": "https://secure.ssa.gov/poms.nsf/lnx/0300203001"
+    },
+    "source_4": {
+      "url": "https://secure.ssa.gov/poms.nsf/lnx/0300207001"
+    },
+    "source_5": {
+      "url": "https://secure.ssa.gov/poms.nsf/lnx/0300208001"
+    },
+    "source_6": {
+      "url": "https://secure.ssa.gov/poms.nsf/lnx/0300208010"
+    },
+    "source_7": {
+      "url": "https://secure.ssa.gov/poms.nsf/lnx/0301310001"
+    },
+    "source_8": {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title42/html/USCODE-2024-title42-chap7-subchapII-sec402.htm",
+      "snapshot_source_id": "uscode_social_security_benefits-1af74442e1b2b920",
+      "sidecar_path": "data/raw/uscode_social_security_benefits/2026-10-06_2.json"
+    },
+    "source_9": {
+      "url": "https://www.govinfo.gov/link/uscode/42/402"
+    },
+    "source_10": {
+      "url": "https://www.ssa.gov/survivor"
+    },
+    "source_11": {
+      "url": "https://www.ssa.gov/survivor/eligibility"
+    }
+  }
+}

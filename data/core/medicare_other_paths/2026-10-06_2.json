@@ -1,0 +1,140 @@
+{
+  "adapter": "medicare",
+  "url": "https://www.medicare.gov/basics/get-started-with-medicare/other-paths",
+  "sections": [
+    {
+      "heading": "Which path is right for me?",
+      "level": 1,
+      "content": [
+        {
+          "text": "Medicare is personal, and everyone’s journey is unique. Factors like your age, if you’re still working, and when you get retirement or disability benefits from Social Security, all impact when and how you sign up for Medicare."
+        }
+      ]
+    },
+    {
+      "heading": "If you:",
+      "level": 2,
+      "content": []
+    },
+    {
+      "heading": "Get disability benefits",
+      "level": 3,
+      "content": [
+        {
+          "text": "If you’re under 65 and getting disability benefits from Social Security, you get Medicare automatically after getting disability benefits for 24 months or when you turn 65 – whichever comes first. We’ll mail you a welcome package with your Medicare card 3 months before your Medicare coverage starts. Keep that timing in mind."
+        },
+        {
+          "text": "Follow your path"
+        }
+      ]
+    },
+    {
+      "heading": "Are working past 65",
+      "level": 3,
+      "content": [
+        {
+          "text": "If you (or your spouse) are still working when you turn 65, enrolling in Medicare works a little differently. Find out when you need to sign up. Then when you’re ready, you can follow the “Getting Social Security benefits after 65” path to get all the information you need."
+        },
+        {
+          "text": "Follow your path"
+        }
+      ]
+    },
+    {
+      "heading": "Have End-Stage Renal Disease (ESRD)",
+      "level": 3,
+      "content": [
+        {
+          "text": "End-Stage Renal Disease (ESRD) is permanent kidney failure that requires a regular course of dialysis or a kidney transplant."
+        },
+        {
+          "text": "Learn about Medicare & ESRD"
+        }
+      ]
+    },
+    {
+      "heading": "Have coverage from the Marketplace",
+      "level": 3,
+      "content": [
+        {
+          "text": "You should generally sign up for Medicare when you’re first eligible (usually when you turn 65) to avoid a delay in Medicare coverage and the possibility of a Medicare late enrollment penalty. You don’t need to join the Marketplace if you have Medicare. The Marketplace doesn’t affect your Medicare choices or benefits."
+        },
+        {
+          "text": "Learn about Medicare & Marketplace"
+        }
+      ]
+    },
+    {
+      "heading": "Have ALS (Lou Gehrig’s disease)",
+      "level": 3,
+      "content": [
+        {
+          "text": "You get Medicare automatically the same month that you start to get Social Security benefits. If you haven’t done it yet, your first step is to apply for disability benefits at Social Security. Then you can follow the “Getting Social Security benefits before 65” path to get all the information you need."
+        },
+        {
+          "text": "Apply at Social Security"
+        }
+      ]
+    },
+    {
+      "heading": "Need a Special Enrollment Period (SEP)",
+      "level": 3,
+      "content": [
+        {
+          "text": "After you’re first eligible to sign up for Medicare, you may have other opportunities to enroll. Learning about these situations can help you avoid gaps in coverage and late enrollment penalties."
+        },
+        {
+          "text": "Learn about available SEPs"
+        }
+      ]
+    },
+    {
+      "heading": "Have to pay for Part A",
+      "level": 3,
+      "content": [
+        {
+          "text": "If you don’t qualify for a premium-free Part A, you might be able to buy it. In 2023, the premium is either $278 or $506 each month, depending on how long you or your spouse worked and paid Medicare taxes. Who qualifies for Part A without paying a monthly premium?"
+        },
+        {
+          "text": "Apply at Social Security"
+        }
+      ]
+    },
+    {
+      "heading": "I need more help",
+      "level": 2,
+      "content": [
+        {
+          "text": "If you’re still not sure what path is right for you, or don’t think any of these situations apply to you, help is available – on the phone, via web chat, or in-person. Talk to someone."
+        }
+      ]
+    }
+  ],
+  "expected_sections": [],
+  "missing_expected_sections": [],
+  "candidate_requirements": [
+    {
+      "locator": "Have End-Stage Renal Disease (ESRD)",
+      "text": "End-Stage Renal Disease (ESRD) is permanent kidney failure that requires a regular course of dialysis or a kidney transplant."
+    },
+    {
+      "locator": "Have coverage from the Marketplace",
+      "text": "You should generally sign up for Medicare when you’re first eligible (usually when you turn 65) to avoid a delay in Medicare coverage and the possibility of a Medicare late enrollment penalty. You don’t need to join the Marketplace if you have Medicare. The Marketplace doesn’t affect your Medicare choices or benefits."
+    },
+    {
+      "locator": "Need a Special Enrollment Period (SEP)",
+      "text": "After you’re first eligible to sign up for Medicare, you may have other opportunities to enroll. Learning about these situations can help you avoid gaps in coverage and late enrollment penalties."
+    },
+    {
+      "locator": "Have to pay for Part A",
+      "text": "If you don’t qualify for a premium-free Part A, you might be able to buy it. In 2023, the premium is either $278 or $506 each month, depending on how long you or your spouse worked and paid Medicare taxes. Who qualifies for Part A without paying a monthly premium?"
+    }
+  ],
+  "source_id": "medicare_other_paths-d7d2692dd6995310",
+  "seed_id": "medicare_other_paths",
+  "program_ids": [
+    "medicare_eligibility"
+  ],
+  "review_required": true,
+  "extracted_on": "2026-10-06"
+}

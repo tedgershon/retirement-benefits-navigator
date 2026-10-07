@@ -1,0 +1,13 @@
+{
+  "source_id": "medicare_extra_help-cebdd5ff5fabfc52",
+  "seed_id": "medicare_extra_help",
+  "url": "https://www.medicare.gov/basics/costs/help/drug-costs",
+  "document_type": "html",
+  "snapshot_path": "data\\raw\\medicare_extra_help\\2026-10-06.html",
+  "content_hash": "cebdd5ff5fabfc526919f15c15d68c818781aebc01f51da190680b252dac6944",
+  "fetched_at": "2026-10-06T01:55:06.401707+00:00",
+  "adapter": "medicare",
+  "program_ids": [
+    "medicare_part_d_extra_help"
+  ]
+}

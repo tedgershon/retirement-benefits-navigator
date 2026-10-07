@@ -1,0 +1,429 @@
+{
+  "adapter": "medicare",
+  "url": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/how-do-i-sign-up-for-medicare",
+  "sections": [
+    {
+      "heading": "How do I sign up for Medicare?",
+      "level": 1,
+      "content": [
+        {
+          "text": "Some people get Medicare Part A (Hospital Insurance) and Part B (Medical Insurance) automatically, and some have to sign up for it."
+        },
+        {
+          "text": "Why do some people get Medicare automatically?"
+        }
+      ]
+    },
+    {
+      "heading": "Answer a few questions to find out",
+      "level": 2,
+      "content": [
+        {
+          "text": "These questions don’t apply if you already have Part A and want to sign up for Part B ."
+        }
+      ]
+    },
+    {
+      "heading": "Do you get benefits from Social Security (or the Railroad Retirement Board) now?",
+      "level": 2,
+      "content": []
+    },
+    {
+      "heading": "Do you get benefits from Social Security (or the Railroad Retirement Board) because of a disability or ALS (also called Lou Gehrig's disease)?",
+      "level": 2,
+      "content": []
+    },
+    {
+      "heading": "Do you have ALS (Amyotrophic Lateral Sclerosis, also called Lou Gehrig's disease)?",
+      "level": 2,
+      "content": []
+    },
+    {
+      "heading": "Did you start getting benefits from Social Security (or the Railroad Retirement Board) at least 4 months before you turned 65?",
+      "level": 2,
+      "content": []
+    },
+    {
+      "heading": "Select which best describes you:",
+      "level": 2,
+      "content": []
+    },
+    {
+      "heading": "Do you plan to start getting benefits from Social Security (or the Railroad Retirement Board) at least 4 months before you turn 65?",
+      "level": 2,
+      "content": []
+    },
+    {
+      "heading": "Select your situation:",
+      "level": 2,
+      "content": []
+    },
+    {
+      "heading": "Your answer:",
+      "level": 2,
+      "content": []
+    },
+    {
+      "heading": "You automatically get Medicare",
+      "level": 3,
+      "content": [
+        {
+          "text": "You should already have Part A (Hospital Insurance) and Part B (Medical Insurance) , because you have ALS (Amyotrophic Lateral Sclerosis) and you’re already getting disability benefits."
+        },
+        {
+          "text": "We mailed you a welcome package with your Medicare card."
+        }
+      ]
+    },
+    {
+      "heading": "What can I do next?",
+      "level": 3,
+      "content": [
+        {
+          "text": "See coverage options"
+        }
+      ]
+    },
+    {
+      "heading": "Your answer:",
+      "level": 2,
+      "content": []
+    },
+    {
+      "heading": "You automatically get Medicare after getting disability benefits for 24 months",
+      "level": 3,
+      "content": [
+        {
+          "text": "You’ll get Part A (Hospital Insurance) and Part B (Medical Insurance) ."
+        },
+        {
+          "text": "We’ll mail you a welcome package with your Medicare card 3 months before your Medicare coverage starts."
+        },
+        {
+          "text": "Sign up for Part B if you live in Puerto Rico or outside the U.S. You get Part A automatically. If you want Part B, you need to sign up for it. If you don’t sign up for Part B within 3 months after your Part A starts, you might have to wait to sign up and pay a monthly late enrollment penalty."
+        },
+        {
+          "text": "How much is the Part B penalty? How do I sign up for Part B?"
+        }
+      ]
+    },
+    {
+      "heading": "What can I do next?",
+      "level": 3,
+      "content": [
+        {
+          "text": "See coverage options"
+        }
+      ]
+    },
+    {
+      "heading": "Your answer:",
+      "level": 2,
+      "content": []
+    },
+    {
+      "heading": "You automatically get Medicare when you turn 65",
+      "level": 3,
+      "content": [
+        {
+          "text": "You’ll get Part A (Hospital Insurance) and Part B (Medical Insurance) ."
+        },
+        {
+          "text": "We’ll mail you a welcome package with your Medicare card 3 months before your Medicare coverage starts."
+        },
+        {
+          "text": "Sign up for Part B if you live in Puerto Rico or outside the U.S. You get Part A automatically. If you want Part B, you need to sign up for it. If you don’t sign up for Part B within 3 months of turning 65, you might have to wait to sign up and pay a monthly late enrollment penalty."
+        },
+        {
+          "text": "How much is the Part B penalty? How do I sign up for Part B?"
+        }
+      ]
+    },
+    {
+      "heading": "What can I do next?",
+      "level": 3,
+      "content": [
+        {
+          "text": "See coverage options"
+        }
+      ]
+    },
+    {
+      "heading": "Your answer",
+      "level": 2,
+      "content": []
+    },
+    {
+      "heading": "You automatically get Medicare",
+      "level": 3,
+      "content": [
+        {
+          "text": "Part A (Hospital Insurance) because you’re getting benefits from Social Security (or the Railroad Retirement Board)."
+        },
+        {
+          "text": "You chose if you wanted Part B (Medical Insurance) when you applied for benefits."
+        },
+        {
+          "text": "About 2 weeks after you sign up, we’ll mail you a welcome package with your Medicare card."
+        },
+        {
+          "text": "Know when to sign up for Part B You can only sign up for Part B at certain times. If you don’t sign up for Part B when you turn 65, you might have to wait to sign up and pay a monthly late enrollment penalty. Find out when I can sign up. How much is the Part B penalty?"
+        }
+      ]
+    },
+    {
+      "heading": "What can I do next?",
+      "level": 3,
+      "content": [
+        {
+          "text": "See coverage options"
+        }
+      ]
+    },
+    {
+      "heading": "Your answer:",
+      "level": 2,
+      "content": []
+    },
+    {
+      "heading": "You automatically get Medicare when you turn 65",
+      "level": 3,
+      "content": [
+        {
+          "text": "(as long as you start getting Social Security benefits at least 4 months before you turn 65)"
+        },
+        {
+          "text": "You’ll get Part A (Hospital Insurance) and Part B (Medical Insurance) ."
+        },
+        {
+          "text": "We’ll mail you a welcome package with your Medicare card 3 months before your Medicare coverage starts."
+        },
+        {
+          "text": "Sign up for Part B if you live in Puerto Rico or outside the U.S. You get Part A automatically. If you want Part B, you need to sign up for it. If you don’t sign up for Part B within 3 months of turning 65, you might have to wait to sign up and pay a monthly late enrollment penalty."
+        },
+        {
+          "text": "How much is the Part B penalty? How do I sign up for Part B?"
+        }
+      ]
+    },
+    {
+      "heading": "What can I do next?",
+      "level": 3,
+      "content": [
+        {
+          "text": "See coverage options"
+        }
+      ]
+    },
+    {
+      "heading": "Your answer:",
+      "level": 2,
+      "content": []
+    },
+    {
+      "heading": "Contact Social Security to sign up for Medicare.",
+      "level": 3,
+      "content": [
+        {
+          "text": "You can either:"
+        },
+        {
+          "text": "Sign up for just Part A (Hospital Insurance) and Part B (Medical Insurance) ."
+        },
+        {
+          "text": "Apply to get benefits from Social Security (or the Railroad Retirement Board). You’ll get Part A automatically once you start getting benefits. You’ll choose if you want Part B when you apply for benefits."
+        },
+        {
+          "text": "What if I have a Health Savings Account (HSA)? Why do I contact Social Security?"
+        },
+        {
+          "text": "Know when to sign up for Part B You can only sign up for Part B at certain times. If you don’t sign up for Part B when you turn 65, you might have to wait to sign up and pay a monthly late enrollment penalty. Find out when you can sign up. How much is the Part B penalty?"
+        }
+      ]
+    },
+    {
+      "heading": "Ways to sign up:",
+      "level": 3,
+      "content": [
+        {
+          "text": "Online (at Social Security) – It’s the easiest and fastest way to sign up and get any financial help you may need. (You’ll need to create your secure my Social Security account to sign up for Medicare or apply for benefits.)"
+        },
+        {
+          "text": "If you or your spouse worked for a railroad, call the Railroad Retirement Board at 1-877-772-5772."
+        },
+        {
+          "text": "About 2 weeks after you sign up, we’ll mail you a welcome package with your Medicare card."
+        }
+      ]
+    },
+    {
+      "heading": "What can I do next?",
+      "level": 3,
+      "content": [
+        {
+          "text": "Sign up now"
+        }
+      ]
+    },
+    {
+      "heading": "Your answer:",
+      "level": 2,
+      "content": []
+    },
+    {
+      "heading": "Getting Medicare is your choice. If you want to sign up, contact Social Security.",
+      "level": 3,
+      "content": [
+        {
+          "text": "To get full Medicare benefits, you need both Part A (Hospital Insurance) and Part B (Medical Insurance) ."
+        },
+        {
+          "text": "When your coverage starts depends on whether you’re on dialysis or getting a transplant."
+        },
+        {
+          "text": "Why do I contact Social Security?"
+        }
+      ]
+    },
+    {
+      "heading": "Ways to sign up:",
+      "level": 3,
+      "content": [
+        {
+          "text": "Online (at Social Security) – It’s the easiest and fastest way to sign up and get any financial help you may need. (You’ll need to create your secure my Social Security account to sign up for Medicare or apply for benefits.)"
+        },
+        {
+          "text": "Contact your local Social Security office."
+        },
+        {
+          "text": "If you or your spouse worked for a railroad, call the Railroad Retirement Board at 1-877-772-5772."
+        },
+        {
+          "text": "About 2 weeks after you sign up, we’ll mail you a welcome package with your Medicare card."
+        }
+      ]
+    },
+    {
+      "heading": "What can I do next?",
+      "level": 3,
+      "content": [
+        {
+          "text": "See coverage options Get ESRD coverage details"
+        }
+      ]
+    },
+    {
+      "heading": "Your answer:",
+      "level": 2,
+      "content": []
+    },
+    {
+      "heading": "Apply for Social Security disability benefits to get:",
+      "level": 3,
+      "content": [
+        {
+          "text": "Part A (Hospital Insurance)"
+        },
+        {
+          "text": "Part B (Medical Insurance)"
+        },
+        {
+          "text": "You’ll automatically get Part A and Part B the month your disability benefits start."
+        }
+      ]
+    },
+    {
+      "heading": "Ways to apply for disability benefits:",
+      "level": 3,
+      "content": [
+        {
+          "text": "Call Social Security at 1-800-772-1213. TTY users can call 1-800-325-0778."
+        },
+        {
+          "text": "Contact your local Social Security office."
+        },
+        {
+          "text": "If you or your spouse worked for a railroad, call the Railroad Retirement Board at 1-877-772-5772."
+        },
+        {
+          "text": "Once your disability benefits start, we’ll mail you a welcome package with your Medicare card."
+        },
+        {
+          "text": "Sign up for Part B if you live in Puerto Rico or outside the U.S. You get Part A automatically. If you want Part B, you need to sign up for it. If you don’t sign up for Part B within 3 months after your Part A starts, you might have to wait to sign up for Part B and pay a monthly late enrollment penalty."
+        },
+        {
+          "text": "How much is the Part B penalty? How do I sign up for Part B?"
+        }
+      ]
+    },
+    {
+      "heading": "What can I do next?",
+      "level": 3,
+      "content": [
+        {
+          "text": "See coverage options"
+        }
+      ]
+    },
+    {
+      "heading": "Your answer:",
+      "level": 2,
+      "content": []
+    },
+    {
+      "heading": "To qualify for Medicare, you need to get disability benefits from:",
+      "level": 3,
+      "content": [
+        {
+          "text": "Social Security"
+        },
+        {
+          "text": "OR"
+        },
+        {
+          "text": "Railroad Retirement Board"
+        },
+        {
+          "text": "You’ll automatically get Part A (Hospital Insurance) and Part B (Medical Insurance) after you get disability benefits for 24 months. We’ll mail you a welcome package with your Medicare card."
+        },
+        {
+          "text": "Get more information about applying for Social Security disability benefits."
+        },
+        {
+          "text": "If you or your spouse worked for a railroad, call the Railroad Retirement Board at 1-877-772-5772."
+        }
+      ]
+    },
+    {
+      "heading": "What can I do next?",
+      "level": 3,
+      "content": [
+        {
+          "text": "Get disability benefit details"
+        }
+      ]
+    },
+    {
+      "heading": "Get more details if you:",
+      "level": 2,
+      "content": [
+        {
+          "text": "Have End-Stage Renal Disease (ESRD)."
+        },
+        {
+          "text": "Need help with costs, or have a disability or a chronic condition."
+        }
+      ]
+    }
+  ],
+  "expected_sections": [],
+  "missing_expected_sections": [],
+  "candidate_requirements": [],
+  "source_id": "medicare_sign_up-6ca4a5fb2ada467b",
+  "seed_id": "medicare_sign_up",
+  "program_ids": [
+    "medicare_eligibility"
+  ],
+  "review_required": true,
+  "extracted_on": "2026-10-06"
+}

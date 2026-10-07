@@ -1,0 +1,13 @@
+{
+  "source_id": "uscode_medicare_part_a-510ae48dbf9edfa9",
+  "seed_id": "uscode_medicare_part_a",
+  "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title42/pdf/USCODE-2024-title42-chap7-subchapXVIII-partA-sec1395c.pdf",
+  "document_type": "pdf",
+  "snapshot_path": "data\\raw\\uscode_medicare_part_a\\2026-10-06_1.pdf",
+  "content_hash": "510ae48dbf9edfa9b78fcb6c27b339cac9ed6abf360ae87895d816065cf2bcb4",
+  "fetched_at": "2026-10-06T03:31:29.179315+00:00",
+  "adapter": "statute",
+  "program_ids": [
+    "medicare_eligibility"
+  ]
+}

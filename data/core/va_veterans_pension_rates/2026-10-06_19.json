@@ -1,0 +1,389 @@
+{
+  "adapter": "va",
+  "url": "https://www.va.gov/pension/veterans-pension-rates/",
+  "sections": [
+    {
+      "heading": "Current pension rates for Veterans",
+      "level": 1,
+      "content": [
+        {
+          "text": "Review current VA pension rates for Veterans, including VA Aid and Attendance rates. If you qualify for these benefits, we’ll base your payment amount on the difference between your income for VA purposes and a limit that Congress sets (called the Maximum Annual Pension Rate, or MAPR)."
+        },
+        {
+          "text": "Your income for VA purposes is how much you earn, including your Social Security benefits, investment and retirement payments, and any income your dependents receive. Some expenses, like non-reimbursable medical expenses (medical expenses not covered by your insurance provider), may reduce your income for VA purposes."
+        },
+        {
+          "text": "Your MAPR amount is the maximum amount of pension payable. Your MAPR is based on how many dependents you have, if you’re married to another Veteran who qualifies for a pension, and if your disabilities qualify you for Housebound or Aid and Attendance benefits. MAPRs are adjusted each year for cost-of-living increases. You can find your current MAPR amount using the tables on this page."
+        },
+        {
+          "text": "Example: You’re a qualified Veteran with a dependent, non-Veteran spouse and no children. You also qualify for Aid and Attendance benefits based on your disabilities. You and your spouse have a combined yearly income of $10,000."
+        },
+        {
+          "text": "Your MAPR amount = $33,548 Your yearly income = $10,000 Your VA pension = $23,548 for the year (or $1,962 paid each month)"
+        }
+      ]
+    },
+    {
+      "heading": "What’s the net worth limit to be eligible for Veterans Pension benefits?",
+      "level": 2,
+      "content": [
+        {
+          "text": "From December 1, 2025, to November 30, 2026, the net worth limit to be eligible for Veterans Pension benefits is $163,699 ."
+        },
+        {
+          "text": "On October 18, 2018, we changed the way we assess net worth to make the pension entitlement rules clearer. The net worth calculation includes your and your dependent’s assets and income for VA purposes. When you apply for Veterans Pension benefits, you’ll need to report all of these assets and income."
+        },
+        {
+          "text": "Note: If your child’s net worth is more than the net worth limit, we don’t consider them to be a dependent when we determine your pension."
+        },
+        {
+          "text": "Read our definitions:"
+        }
+      ]
+    },
+    {
+      "heading": "Assets",
+      "level": 3,
+      "content": [
+        {
+          "text": "Assets include the fair market value of all the real and personal property that you own, minus the amount of any mortgages you may have. “Real property” means any land and buildings you may own. Your personal property assets may include these and other items:"
+        },
+        {
+          "text": "Investments (like stocks and bonds)"
+        },
+        {
+          "text": "Antique furniture"
+        },
+        {
+          "text": "Boats"
+        },
+        {
+          "text": "Assets don’t include:"
+        },
+        {
+          "text": "Your primary residence (the home where you live most or all of the time)"
+        },
+        {
+          "text": "Your car"
+        },
+        {
+          "text": "Basic home items like appliances that you wouldn’t take with you if you moved to a new house"
+        },
+        {
+          "text": "Read more about how we define “assets”"
+        }
+      ]
+    },
+    {
+      "heading": "Annual income for VA purposes",
+      "level": 3,
+      "content": [
+        {
+          "text": "Annual income for VA purposes is the money earned in a year from a job or from retirement or annuity payments. Your annual income for VA purposes may include these and other kinds of income:"
+        },
+        {
+          "text": "Salary or hourly pay"
+        },
+        {
+          "text": "Bonuses"
+        },
+        {
+          "text": "Commissions"
+        },
+        {
+          "text": "Overtime"
+        },
+        {
+          "text": "Tips"
+        },
+        {
+          "text": "We may subtract certain expenses from your annual income when we assess your income for VA purposes and net worth. We call these applicable deductible expenses. They include:"
+        },
+        {
+          "text": "Educational expenses"
+        },
+        {
+          "text": "Medical expenses you’re not reimbursed for"
+        },
+        {
+          "text": "Read more about how we define “annual income”"
+        }
+      ]
+    },
+    {
+      "heading": "An example of net worth and eligibility",
+      "level": 3,
+      "content": [
+        {
+          "text": "If you had $121,000 in assets and $14,000 in annual income for VA purposes, then your net worth would be $135,000. This is less than the net worth limit of  $163,699. So you would be eligible for Veterans Pension benefits."
+        }
+      ]
+    },
+    {
+      "heading": "What’s the 3-year look-back period for asset transfers?",
+      "level": 2,
+      "content": [
+        {
+          "text": "When we receive a pension claim, we review the terms and conditions of any assets the Veteran may have transferred in the 3 years before filing the claim."
+        },
+        {
+          "text": "If you transfer assets for less than fair market value during the look-back period, and those assets would have pushed your net worth above the limit for a VA pension, you may be subject to a penalty period of up to 5 years. You won’t be eligible for pension benefits during this time."
+        },
+        {
+          "text": "Note: This policy took effect on October 18, 2018. If you filed your claim before this date, the look-back period doesn’t apply. (A look-back period never includes a date before October 18, 2018.)"
+        }
+      ]
+    },
+    {
+      "heading": "What’s a penalty period?",
+      "level": 2,
+      "content": [
+        {
+          "text": "A penalty period is a length of time when a Veteran isn’t eligible for pension benefits because they transferred assets for less than fair market value during the look-back period. We won’t pay pension benefits during a penalty period. The penalty period rate is $2,874."
+        }
+      ]
+    },
+    {
+      "heading": "Find your Maximum Annual Pension Rate (MAPR) amount",
+      "level": 2,
+      "content": [
+        {
+          "text": "Date of cost-of-living increase: December 1, 2025 Increase factor: 2.8% Standard Medicare deduction: Actual amount will be determined by the Social Security Administration (SSA) based on individual income"
+        }
+      ]
+    },
+    {
+      "heading": "For Veterans with no dependents",
+      "level": 3,
+      "content": [
+        {
+          "table": [
+            [
+              "If you have no dependents and…",
+              "Your MAPR amount is (in U.S. $)"
+            ],
+            [
+              "You don’t qualify for Housebound or Aid and Attendance benefits",
+              "17,441"
+            ],
+            [
+              "You qualify for Housebound benefits",
+              "21,313"
+            ],
+            [
+              "You qualify for Aid and Attendance benefits",
+              "29,093"
+            ]
+          ]
+        },
+        {
+          "text": "Note: If you have medical expenses, you may deduct only the amount that’s above 5% of your MAPR amount ($872 for a Veteran with no spouse or child)."
+        }
+      ]
+    },
+    {
+      "heading": "For Veterans with at least 1 dependent spouse or child",
+      "level": 3,
+      "content": [
+        {
+          "table": [
+            [
+              "If you have 1 dependent and…",
+              "Your MAPR amount is (in U.S. $)"
+            ],
+            [
+              "You don’t qualify for Housebound or Aid and Attendance benefits",
+              "22,839"
+            ],
+            [
+              "You qualify for Housebound benefits",
+              "26,710"
+            ],
+            [
+              "You qualify for Aid and Attendance benefits",
+              "34,488"
+            ]
+          ]
+        },
+        {
+          "text": "Note:"
+        },
+        {
+          "text": "If you have more than 1 dependent , add $2,984 to your MAPR amount for each additional dependent"
+        },
+        {
+          "text": "If you have a child who works , you may exclude their wages up to $16,100"
+        },
+        {
+          "text": "If you have medical expenses , you may deduct only the amount that’s above 5% of your MAPR amount ($1,141 for a Veteran with 1 dependent)"
+        }
+      ]
+    },
+    {
+      "heading": "For 2 Veterans who are married to each other",
+      "level": 3,
+      "content": [
+        {
+          "table": [
+            [
+              "If you’re 2 Veterans who are married to each other and…",
+              "Your MAPR amount is (in U.S. $)"
+            ],
+            [
+              "Neither of you qualifies for Housebound or Aid and Attendance benefits",
+              "22,839"
+            ],
+            [
+              "1 of you qualifies for Housebound benefits",
+              "26,710"
+            ],
+            [
+              "Both of you qualify for Housebound benefits",
+              "30,580"
+            ],
+            [
+              "1 of you qualifies for Aid and Attendance benefits",
+              "34,488"
+            ],
+            [
+              "1 of you qualifies for Housebound benefits and 1 of you qualifies for Aid and Attendance benefits",
+              "38,350"
+            ],
+            [
+              "Both of you qualify for Aid and Attendance benefits",
+              "46,143"
+            ]
+          ]
+        },
+        {
+          "text": "Note:"
+        },
+        {
+          "text": "If you have more than 1 dependent , add $2,984 to your MAPR amount for each additional child"
+        },
+        {
+          "text": "If you have a child who works , you may exclude their wages up to $16,100"
+        },
+        {
+          "text": "If you have medical expenses , you may deduct only the amount that’s above 5% of your MAPR amount ($1,141 for a Veteran with 1 dependent)"
+        }
+      ]
+    },
+    {
+      "heading": "Past VA pension rate tables",
+      "level": 2,
+      "content": [
+        {
+          "text": "Review VA pension rate tables from past years:"
+        },
+        {
+          "text": "2025 rates (effective December 1, 2024) 2024 rates (effective December 1, 2023) 2023 rates (effective December 1, 2022)"
+        }
+      ]
+    },
+    {
+      "heading": "Full Title 38 regulations",
+      "level": 2,
+      "content": [
+        {
+          "text": "Read full regulations from Title 38 Code of Federal Regulations:"
+        },
+        {
+          "text": "3.23 Improved pension rates—Veterans and surviving spouses"
+        },
+        {
+          "text": "3.24 Improved pension rates—surviving children"
+        },
+        {
+          "text": "3.271 Computation of income"
+        },
+        {
+          "text": "3.272 Exclusions from income"
+        },
+        {
+          "text": "3.273 Rate computation"
+        },
+        {
+          "text": "Last updated: December 18, 2025"
+        }
+      ]
+    }
+  ],
+  "expected_sections": [
+    "pension"
+  ],
+  "missing_expected_sections": [],
+  "candidate_requirements": [
+    {
+      "locator": "Current pension rates for Veterans",
+      "text": "Review current VA pension rates for Veterans, including VA Aid and Attendance rates. If you qualify for these benefits, we’ll base your payment amount on the difference between your income for VA purposes and a limit that Congress sets (called the Maximum Annual Pension Rate, or MAPR)."
+    },
+    {
+      "locator": "Current pension rates for Veterans",
+      "text": "Your income for VA purposes is how much you earn, including your Social Security benefits, investment and retirement payments, and any income your dependents receive. Some expenses, like non-reimbursable medical expenses (medical expenses not covered by your insurance provider), may reduce your income for VA purposes."
+    },
+    {
+      "locator": "Current pension rates for Veterans",
+      "text": "Example: You’re a qualified Veteran with a dependent, non-Veteran spouse and no children. You also qualify for Aid and Attendance benefits based on your disabilities. You and your spouse have a combined yearly income of $10,000."
+    },
+    {
+      "locator": "Current pension rates for Veterans",
+      "text": "Your MAPR amount = $33,548 Your yearly income = $10,000 Your VA pension = $23,548 for the year (or $1,962 paid each month)"
+    },
+    {
+      "locator": "What’s the net worth limit to be eligible for Veterans Pension benefits?",
+      "text": "From December 1, 2025, to November 30, 2026, the net worth limit to be eligible for Veterans Pension benefits is $163,699 ."
+    },
+    {
+      "locator": "What’s the net worth limit to be eligible for Veterans Pension benefits?",
+      "text": "On October 18, 2018, we changed the way we assess net worth to make the pension entitlement rules clearer. The net worth calculation includes your and your dependent’s assets and income for VA purposes. When you apply for Veterans Pension benefits, you’ll need to report all of these assets and income."
+    },
+    {
+      "locator": "What’s the net worth limit to be eligible for Veterans Pension benefits?",
+      "text": "Note: If your child’s net worth is more than the net worth limit, we don’t consider them to be a dependent when we determine your pension."
+    },
+    {
+      "locator": "Annual income for VA purposes",
+      "text": "Annual income for VA purposes is the money earned in a year from a job or from retirement or annuity payments. Your annual income for VA purposes may include these and other kinds of income:"
+    },
+    {
+      "locator": "Annual income for VA purposes",
+      "text": "We may subtract certain expenses from your annual income when we assess your income for VA purposes and net worth. We call these applicable deductible expenses. They include:"
+    },
+    {
+      "locator": "Annual income for VA purposes",
+      "text": "Read more about how we define “annual income”"
+    },
+    {
+      "locator": "An example of net worth and eligibility",
+      "text": "If you had $121,000 in assets and $14,000 in annual income for VA purposes, then your net worth would be $135,000. This is less than the net worth limit of  $163,699. So you would be eligible for Veterans Pension benefits."
+    },
+    {
+      "locator": "What’s the 3-year look-back period for asset transfers?",
+      "text": "If you transfer assets for less than fair market value during the look-back period, and those assets would have pushed your net worth above the limit for a VA pension, you may be subject to a penalty period of up to 5 years. You won’t be eligible for pension benefits during this time."
+    },
+    {
+      "locator": "What’s a penalty period?",
+      "text": "A penalty period is a length of time when a Veteran isn’t eligible for pension benefits because they transferred assets for less than fair market value during the look-back period. We won’t pay pension benefits during a penalty period. The penalty period rate is $2,874."
+    },
+    {
+      "locator": "Find your Maximum Annual Pension Rate (MAPR) amount",
+      "text": "Date of cost-of-living increase: December 1, 2025 Increase factor: 2.8% Standard Medicare deduction: Actual amount will be determined by the Social Security Administration (SSA) based on individual income"
+    },
+    {
+      "locator": "Full Title 38 regulations",
+      "text": "3.271 Computation of income"
+    },
+    {
+      "locator": "Full Title 38 regulations",
+      "text": "3.272 Exclusions from income"
+    }
+  ],
+  "source_id": "va_veterans_pension_rates-a222430cc7c07841",
+  "seed_id": "va_veterans_pension_rates",
+  "program_ids": [
+    "va_veterans_pension"
+  ],
+  "review_required": true,
+  "extracted_on": "2026-10-06"
+}

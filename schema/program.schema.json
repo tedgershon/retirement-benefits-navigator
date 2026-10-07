@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/retirement-benefits/program.schema.json",
+  "title": "Federal benefit program document",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["program_id", "name", "agency", "family", "summary", "application_url", "as_of", "eligibility", "thresholds", "tags", "sources"],
+  "properties": {
+    "program_id": {"enum": ["social_security_retirement", "social_security_spouse", "social_security_survivor", "ssi_federal", "medicare_eligibility", "medicare_part_d_extra_help", "va_veterans_pension", "va_survivors_pension"]},
+    "name": {"type": "string", "minLength": 1},
+    "agency": {"type": "string", "minLength": 1},
+    "family": {"enum": ["social_security", "ssi", "medicare", "extra_help", "va_pension"]},
+    "summary": {"type": "string", "minLength": 1},
+    "application_url": {"type": ["string", "null"], "format": "uri", "pattern": "^https://"},
+    "as_of": {"type": "string", "format": "date"},
+    "eligibility": {"$ref": "#/$defs/node"},
+    "follow_up": {"type": "array", "items": {"type": "object", "additionalProperties": false,
+      "required": ["kind", "description", "evidence"],
+      "properties": {"kind": {"enum": ["application", "enrollment", "entitlement_timing", "payment"]},
+        "description": {"type": "string", "minLength": 1}, "evidence": {"$ref": "#/$defs/evidence"}}}},
+    "thresholds": {"type": "object", "additionalProperties": {"$ref": "#/$defs/threshold"}},
+    "tags": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "sources": {"type": "object", "minProperties": 1, "patternProperties": {"^[a-z][a-z0-9_]*$": {"$ref": "#/$defs/source"}}, "additionalProperties": false}
+  },
+  "$defs": {
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["url"],
+      "properties": {
+        "url": {"type": "string", "format": "uri", "pattern": "^https://"},
+        "snapshot_source_id": {"type": "string", "minLength": 1},
+        "sidecar_path": {"type": "string", "pattern": "^data/raw/[a-z0-9_]+/[0-9]{4}-[0-9]{2}-[0-9]{2}(_[1-9][0-9]*)?\\.json$"}
+      },
+      "dependentRequired": {"snapshot_source_id": ["sidecar_path"], "sidecar_path": ["snapshot_source_id"]}
+    },
+    "evidence": {
+      "type": "array", "minItems": 1,
+      "items": {"type": "object", "additionalProperties": false, "required": ["source_ref", "locator"],
+        "properties": {"source_ref": {"type": "string", "minLength": 1}, "locator": {"type": "string", "minLength": 1}}}
+    },
+    "node": {
+      "oneOf": [
+        {"type": "object", "additionalProperties": false, "required": ["all"], "properties": {"all": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/node"}}, "evidence": {"$ref": "#/$defs/evidence"}}},
+        {"type": "object", "additionalProperties": false, "required": ["any"], "properties": {"any": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/node"}}, "evidence": {"$ref": "#/$defs/evidence"}}},
+        {"type": "object", "additionalProperties": false, "required": ["unknown"], "properties": {"unknown": {"type": "string", "minLength": 1}, "evidence": {"$ref": "#/$defs/evidence"}}},
+        {"type": "object", "additionalProperties": false, "required": ["field", "operator", "evidence"], "properties": {
+          "field": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+          "operator": {"enum": ["==", "!=", "<", "<=", ">", ">=", "in"]},
+          "value": {"type": ["string", "integer", "boolean", "array"]},
+          "threshold": {"type": "string", "minLength": 1},
+          "selectors": {"type": "object", "additionalProperties": {"type": "string", "minLength": 1}},
+          "evidence": {"$ref": "#/$defs/evidence"}
+        }, "oneOf": [{"required": ["value"]}, {"required": ["threshold"]}]}
+      ]
+    },
+    "threshold": {
+      "type": "object", "additionalProperties": false,
+      "required": ["unit", "period", "rows", "evidence"],
+      "properties": {
+        "unit": {"enum": ["years", "months", "days", "usd_cents"]},
+        "period": {"enum": ["not_applicable", "monthly", "annual"]},
+        "effective_from": {"type": "string", "format": "date"},
+        "effective_to": {"type": "string", "format": "date"},
+        "rows": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false, "required": ["selectors"], "properties": {"selectors": {"type": "object", "additionalProperties": {"type": "string"}}, "value": {"type": "integer", "minimum": 0}, "input_field": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"}}, "oneOf": [{"required": ["value"]}, {"required": ["input_field"]}]}},
+        "evidence": {"$ref": "#/$defs/evidence"}
+      }
+    }
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "adapter": "ssa",
+  "url": "https://secure.ssa.gov/poms.nsf/lnx/0300202100",
+  "sections": [
+    {
+      "heading": "Social Security",
+      "level": 1,
+      "content": []
+    },
+    {
+      "heading": "Program Operations Manual System (POMS)",
+      "level": 2,
+      "content": [
+        {
+          "text": "TN 47 (09-25)"
+        }
+      ]
+    },
+    {
+      "heading": "RS 00202.100 Independently Entitled Divorced Spouse",
+      "level": 1,
+      "content": []
+    },
+    {
+      "heading": "A. Introduction",
+      "level": 2,
+      "content": [
+        {
+          "text": "The entitlement requirements for an independently entitled divorced spouse (IEDS)\n            are in RS 00202.005 . Several unique problems arise in these cases since the NH is eligible but has not\n            filed for benefits."
+        },
+        {
+          "text": "IMPORTANT: Remember that IEDS claims are not exempt from the deemed filing provisions in GN 00204.035 ."
+        },
+        {
+          "text": "IMPORTANT: An independently entitled divorced spouse (IEDS) is subject to the number holder’s\n            (NH) WEP PIA although the NH is not yet entitled to Social Security benefits. See RS 00605.372B."
+        }
+      ]
+    },
+    {
+      "heading": "B. Procedure",
+      "level": 2,
+      "content": []
+    },
+    {
+      "heading": "1. Obtaining the worker's SSN",
+      "level": 3,
+      "content": [
+        {
+          "text": "To obtain the NH's SSN, the FO will:"
+        },
+        {
+          "text": "a. Attempt to obtain the SSN from the NH if the claimant does not know the SSN but knows\n                              the NH's whereabouts."
+        },
+        {
+          "text": "b. If the NH's SSN cannot be obtained from the claimant or the NH, follow RM 00207.001 ."
+        }
+      ]
+    },
+    {
+      "heading": "2. Documenting information about the NH",
+      "level": 3,
+      "content": [
+        {
+          "text": "a. Have the claimant complete questions 1, 2, 4, 9, 11, 12, 13, 14, and 15 on an SSA-1\n                              for the NH (see RS 00202.100B.5. ). Fax the SSA-1 into the Non-Disability Repository for Evidentiary Documents (NDRed)\n                              in the Evidence Portal (EP); destroy the paper copy after verifying receipt of the\n                              document in the EP."
+        },
+        {
+          "text": "b. If the claimant does not know the information, see RS 00202.100B.4."
+        },
+        {
+          "text": "c. DO NOT HAVE ANYONE SIGN THE SSA-1 . This form is being used in lieu of an RC, which may be used if preferred. Line out\n                              the remainder of the SSA-1."
+        },
+        {
+          "text": "NOTE:"
+        },
+        {
+          "text": "There may be local procedures for documenting the NH’s information electronically."
+        }
+      ]
+    },
+    {
+      "heading": "3. Verifying information about the NH",
+      "level": 3,
+      "content": [
+        {
+          "text": "Take the following action to verify information about the NH:"
+        }
+      ]
+    },
+    {
+      "heading": "a. General",
+      "level": 4,
+      "content": [
+        {
+          "text": "• Ask the claimant to provide all proofs necessary to adjudicate the claim."
+        },
+        {
+          "text": "• Try to obtain the proofs from the NH if the claimant cannot provide them."
+        },
+        {
+          "text": "• Disallow the claim if the NH's whereabouts cannot be determined and the claimant cannot\n                                    provide the proof even with our assistance."
+        }
+      ]
+    },
+    {
+      "heading": "b. Age",
+      "level": 4,
+      "content": [
+        {
+          "text": "• Follow the instructions in GN 00302.370 if the NH will not cooperate."
+        },
+        {
+          "text": "• Use the least advantageous date of birth for the NH if convincing evidence cannot\n                                    be obtained and three documents showing the NH to be at least age 62 are used in determining\n                                    age."
+        },
+        {
+          "text": "NOTE:"
+        },
+        {
+          "text": "If necessary, benefits will be adjusted at the time the NH actually files for benefits."
+        }
+      ]
+    },
+    {
+      "heading": "c. Disability",
+      "level": 4,
+      "content": [
+        {
+          "text": "If the NH's disability is alleged and is material to the claim (i.e., GPO involved):"
+        },
+        {
+          "text": "• contact the NH to obtain medical information."
+        },
+        {
+          "text": "• request a disability determination."
+        },
+        {
+          "text": "If the NH cannot be located or evidence of disability cannot be obtained, the claimant\n                        will be subject to GPO or, if appropriate, disallow the claim."
+        }
+      ]
+    },
+    {
+      "heading": "4. Locating and contacting the worker (if required)",
+      "level": 3,
+      "content": [
+        {
+          "text": "The NH is not required by law to cooperate in the development of the former spouse's\n                  claim. Therefore, if the NH is uncooperative, do not press the issue."
+        }
+      ]
+    },
+    {
+      "heading": "a. NH is located",
+      "level": 4,
+      "content": [
+        {
+          "text": "When the NH is located, advise them:"
+        },
+        {
+          "text": "• of the name of the individual who is filing on their record;"
+        },
+        {
+          "text": "• of the type of benefit involved;"
+        },
+        {
+          "text": "• of the evidence needed;"
+        },
+        {
+          "text": "• that entitlement of the divorced spouse will not adversely affect their benefit amount\n                                    or the benefits of any future auxiliaries; and"
+        },
+        {
+          "text": "• that their current whereabouts will not be divulged to the claimant."
+        },
+        {
+          "text": "NOTE: Do not divulge the claimant's whereabouts to the NH. Disclosure of the whereabouts\n                        of either party is a violation of the Privacy Act."
+        }
+      ]
+    },
+    {
+      "heading": "b. NH not located",
+      "level": 4,
+      "content": [
+        {
+          "text": "If you cannot locate the NH:"
+        },
+        {
+          "text": "• obtain the NH's identifying information from the claimant; and"
+        },
+        {
+          "text": "• check SSA records to try to determine the NH's SSN and an employer."
+        },
+        {
+          "text": "If an employer is located and the NH was employed there within the last 5 years, contact\n                        the employer to try to determine the NH's address; otherwise, disallow the claim,\n                        if appropriate."
+        }
+      ]
+    },
+    {
+      "heading": "5. Other development",
+      "level": 3,
+      "content": [
+        {
+          "text": "a. If contact with the NH is otherwise unnecessary, develop gaps in the E/R and lag earnings\n                              only if entitlement is a factor."
+        },
+        {
+          "text": "b. Use the certified E/R (CER) function of the Informational/Certified Earnings Record\n                              System (ICERS) to determine insured status and PIA computation."
+        },
+        {
+          "text": "c. For months of entitlement prior to January 2024, review the NH’s record to determine\n                              if evidence of a non-covered pension exists. Use the instructions in RS 00605.360 to determine if WEP applies. If WEP is involved: • Undertake the necessary development per RS 00605.366 and RS 00605.367 . • Compute the claimant's benefit amount using the WEP PIA if you cannot locate the NH\n                                          or obtain evidence of WEP. • Take no further action if it appears that WEP does not apply."
+        },
+        {
+          "text": "d. Get all evidence necessary for adjudication of the claim if the NH is cooperative."
+        },
+        {
+          "text": "e. Do not pursue a lead for the NH."
+        },
+        {
+          "text": "f. If the NH dies before entitlement and the currently entitled divorced spouse is under\n                              FRA and not entitled to a RIB or DIB, send to the PC: • proof of death; and • an RC instructing the PC to manually convert the IEDS to surviving divorced spouse's\n                                          benefits."
+        }
+      ]
+    },
+    {
+      "heading": "6. Processing",
+      "level": 3,
+      "content": []
+    },
+    {
+      "heading": "a. Claim allowed",
+      "level": 4,
+      "content": [
+        {
+          "text": "If the claim is allowed, the FO will:"
+        },
+        {
+          "text": "• Load the auxiliary claim into MCS and adjudicate via A-101."
+        },
+        {
+          "text": "• Process the DOFA action manually (e.g., A101). IEDS claims are MCS EC exclusions."
+        },
+        {
+          "text": "• Annotate in the A101 remarks, “Independently Entitled Divorced Spouse's Claim-Process\n                                    through MADCAP.”"
+        }
+      ]
+    },
+    {
+      "heading": "b. Claim disallowed",
+      "level": 4,
+      "content": [
+        {
+          "text": "If you disallow the claim, send the claim to the payment center."
+        },
+        {
+          "text": "CAUTION: If you deny the claim because the applicant does not meet the 2-year divorce requirement,\n                        use paragraph 216 in NL 00708.100 when you prepare your denial notice."
+        },
+        {
+          "text": "NOTE:"
+        },
+        {
+          "text": "There may be local procedures to process disallowances for IEDS claims."
+        },
+        {
+          "table": [
+            [
+              "To Link to this section - Use this URL: http://policy.ssa.gov/poms.nsf/lnx/0300202100",
+              "RS 00202.100 - Independently Entitled Divorced Spouse - 09/18/2025 Batch run: 06/09/2026 Rev: 09/18/2025"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "expected_sections": [],
+  "missing_expected_sections": [],
+  "candidate_requirements": [
+    {
+      "locator": "A. Introduction",
+      "text": "The entitlement requirements for an independently entitled divorced spouse (IEDS)\n            are in RS 00202.005 . Several unique problems arise in these cases since the NH is eligible but has not\n            filed for benefits."
+    },
+    {
+      "locator": "4. Locating and contacting the worker (if required)",
+      "text": "The NH is not required by law to cooperate in the development of the former spouse's\n                  claim. Therefore, if the NH is uncooperative, do not press the issue."
+    },
+    {
+      "locator": "b. Claim disallowed",
+      "text": "CAUTION: If you deny the claim because the applicant does not meet the 2-year divorce requirement,\n                        use paragraph 216 in NL 00708.100 when you prepare your denial notice."
+    }
+  ],
+  "source_id": "ssa_independent_divorced_spouse-10a741b98b0b975b",
+  "seed_id": "ssa_independent_divorced_spouse",
+  "program_ids": [
+    "social_security_spouse"
+  ],
+  "review_required": true,
+  "extracted_on": "2026-10-06"
+}

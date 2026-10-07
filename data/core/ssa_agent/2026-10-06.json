@@ -1,0 +1,109 @@
+{
+  "document_type": "agent_extraction",
+  "retrieved_via": "official SSA pages rendered through web access",
+  "retrieved_on": "2026-10-06",
+  "raw_ssa_snapshot_available": false,
+  "review_required": true,
+  "scope_note": "Paraphrased source candidates, not complete or approved eligibility expressions. A missing condition here must not be read as unrestricted.",
+  "programs": [
+    {
+      "program_id": "social_security_retirement",
+      "facts": [
+        {
+          "domain": "eligibility_candidate",
+          "statement": "SSA says monthly retirement benefits can typically start at age 62 for someone who worked and paid Social Security taxes for at least 10 years.",
+          "evidence": {"url": "https://www.ssa.gov/retirement", "locator": "Retirement benefits, introductory eligibility statement"}
+        },
+        {
+          "domain": "application_timing",
+          "statement": "SSA says a person can usually apply while still working.",
+          "evidence": {"url": "https://www.ssa.gov/retirement", "locator": "Retirement benefits, introductory eligibility statement"}
+        },
+        {
+          "domain": "benefit_coordination",
+          "statement": "SSA directs people to check family and survivor benefits based on a family member's work and says entitlement to multiple benefits affects which payment is received.",
+          "evidence": {"url": "https://www.ssa.gov/retirement", "locator": "Explore Retirement options from family members' work"}
+        }
+      ],
+      "unresolved_for_rules": ["Confirm the complete insured-status and application requirements and any exceptions before modeling eligibility."]
+    },
+    {
+      "program_id": "social_security_spouse",
+      "facts": [
+        {
+          "domain": "eligibility_candidate",
+          "statement": "Family benefits can depend on the record of someone entitled to Social Security Retirement or Disability benefits.",
+          "evidence": {"url": "https://www.ssa.gov/family/eligibility", "locator": "Who can get Family benefits"}
+        },
+        {
+          "domain": "pathway_candidate",
+          "statement": "For a spouse, SSA describes a marriage of at least one year together with an alternative of age 62 or older, caring for a child age 15 or younger, or caring for a child of any age who has a disability.",
+          "evidence": {"url": "https://www.ssa.gov/family/eligibility", "locator": "Spouses and ex-spouses"}
+        },
+        {
+          "domain": "pathway_candidate",
+          "statement": "SSA says an ex-spouse married to the worker for at least 10 years may be eligible; some valid non-marital legal relationships may also qualify.",
+          "evidence": {"url": "https://www.ssa.gov/family/eligibility", "locator": "Spouses and ex-spouses"}
+        }
+      ],
+      "unresolved_for_rules": ["The one-year marriage statement is not a universal test; confirm statutory exceptions and divorced-spouse conditions.", "A child's disability and entitlement require program-specific determinations."]
+    },
+    {
+      "program_id": "social_security_survivor",
+      "facts": [
+        {
+          "domain": "eligibility_candidate",
+          "statement": "Survivor benefits may be available to a spouse, ex-spouse, child, or dependent parent of a deceased person who worked and paid Social Security taxes.",
+          "evidence": {"url": "https://www.ssa.gov/survivor/eligibility", "locator": "Who can get Survivor benefits"}
+        },
+        {
+          "domain": "pathway_candidate",
+          "statement": "SSA's ordinary spouse route describes age 60 or older, or age 50 through 59 with a disability, along with at least nine months of marriage before death and remarriage restrictions tied to age 60 or 50.",
+          "evidence": {"url": "https://www.ssa.gov/survivor/eligibility", "locator": "Spouses and ex-spouses"}
+        },
+        {
+          "domain": "pathway_candidate",
+          "statement": "SSA says an ex-spouse married at least 10 years may be eligible; caregiving for the deceased worker's child can create a route regardless of age or marriage duration.",
+          "evidence": {"url": "https://www.ssa.gov/survivor/eligibility", "locator": "Spouses and ex-spouses"}
+        },
+        {
+          "domain": "pathway_candidate",
+          "statement": "SSA describes survivor routes for certain unmarried children, adult children whose disability began before age 22, and dependent parents age 62 or older.",
+          "evidence": {"url": "https://www.ssa.gov/survivor/eligibility", "locator": "Children; Adult children with a disability; Dependent parents"}
+        }
+      ],
+      "unresolved_for_rules": ["Marriage-duration, remarriage, disability, and child-in-care exceptions need detailed review.", "Do not treat the ordinary spouse age route as covering all survivor pathways."]
+    },
+    {
+      "program_id": "ssi_federal",
+      "facts": [
+        {
+          "domain": "eligibility_candidate",
+          "statement": "SSA describes age 65 or older, blindness, or a qualifying disability as alternative SSI pathways; limited income and limited resources are additional requirements.",
+          "evidence": {"url": "https://www.ssa.gov/ssi/text-eligibility-ussi.htm", "locator": "2026 Edition, Who is eligible for SSI?"}
+        },
+        {
+          "domain": "eligibility_candidate",
+          "statement": "SSA also lists citizenship or qualifying noncitizen status, residency, absence, institutionalization, other-benefit application, financial-record permission, and filing requirements.",
+          "evidence": {"url": "https://www.ssa.gov/ssi/text-eligibility-ussi.htm", "locator": "2026 Edition, Who is eligible for SSI?"}
+        },
+        {
+          "domain": "financial_context",
+          "statement": "SSA's 2026 SSI eligibility page lists resource limits of $2,000 for an individual or child and $3,000 for a couple, while explaining that some resources are excluded.",
+          "evidence": {"url": "https://www.ssa.gov/ssi/text-eligibility-ussi.htm", "locator": "2026 Edition, What are limited resources?"}
+        },
+        {
+          "domain": "financial_context",
+          "statement": "SSA says countable income can include work earnings and other sources, but not all income counts; its general work-earnings example is not a universal SSI income threshold.",
+          "evidence": {"url": "https://www.ssa.gov/ssi/eligibility", "locator": "You have little or no income"}
+        },
+        {
+          "domain": "eligibility_candidate",
+          "statement": "SSA's detailed page identifies the 50 states, District of Columbia, and Northern Mariana Islands as ordinary residency areas and describes limited exceptions for certain people temporarily abroad.",
+          "evidence": {"url": "https://www.ssa.gov/ssi/text-eligibility-ussi.htm", "locator": "2026 Edition, What is residency?"}
+        }
+      ],
+      "unresolved_for_rules": ["Countable-income, exclusions, deeming, household rules, and noncitizen categories need detailed review.", "The published resource figures must be tied to the correct period and household category before becoming executable thresholds.", "Institutionalization and absence rules have exceptions and cannot be reduced to broad exclusion tags."]
+    }
+  ]
+}

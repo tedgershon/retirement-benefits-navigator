@@ -1,0 +1,13 @@
+{
+  "source_id": "va_veterans_pension-e7a4fab0a327a952",
+  "seed_id": "va_veterans_pension",
+  "url": "https://www.va.gov/pension/eligibility/",
+  "document_type": "html",
+  "snapshot_path": "data\\raw\\va_veterans_pension\\2026-10-06_1.html",
+  "content_hash": "e7a4fab0a327a952b3ed995cb9a7988002bb515614d5816444c41d9ff3421d1f",
+  "fetched_at": "2026-10-06T01:54:52.570148+00:00",
+  "adapter": "va",
+  "program_ids": [
+    "va_veterans_pension"
+  ]
+}

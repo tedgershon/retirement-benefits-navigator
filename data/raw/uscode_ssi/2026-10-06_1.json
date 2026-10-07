@@ -1,0 +1,13 @@
+{
+  "source_id": "uscode_ssi-1180affad39253cd",
+  "seed_id": "uscode_ssi",
+  "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title42/pdf/USCODE-2024-title42-chap7-subchapXVI-partA-sec1382.pdf",
+  "document_type": "pdf",
+  "snapshot_path": "data\\raw\\uscode_ssi\\2026-10-06_1.pdf",
+  "content_hash": "1180affad39253cddbf6fd0754e4f1e09cc412cca39415cdbb8474428906e6af",
+  "fetched_at": "2026-10-06T03:31:28.709351+00:00",
+  "adapter": "statute",
+  "program_ids": [
+    "ssi_federal"
+  ]
+}

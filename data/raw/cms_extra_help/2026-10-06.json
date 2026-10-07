@@ -1,0 +1,13 @@
+{
+  "source_id": "cms_extra_help-f25d2baa454291b9",
+  "seed_id": "cms_extra_help",
+  "url": "https://www.cms.gov/medicare/enrollment-renewal/part-d-plans/low-income-subsidy/eligibility-low-income-subsidy",
+  "document_type": "html",
+  "snapshot_path": "data\\raw\\cms_extra_help\\2026-10-06.html",
+  "content_hash": "f25d2baa454291b904851688a79e00a61aa56548379438b65aaeacf75c6b4741",
+  "fetched_at": "2026-10-06T01:55:07.529584+00:00",
+  "adapter": "medicare",
+  "program_ids": [
+    "medicare_part_d_extra_help"
+  ]
+}

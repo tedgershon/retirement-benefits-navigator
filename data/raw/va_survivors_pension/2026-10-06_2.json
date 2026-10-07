@@ -1,0 +1,13 @@
+{
+  "source_id": "va_survivors_pension-6c0857f0ca90d4ef",
+  "seed_id": "va_survivors_pension",
+  "url": "https://www.va.gov/family-and-caregiver-benefits/survivor-compensation/survivors-pension/",
+  "document_type": "html",
+  "snapshot_path": "data\\raw\\va_survivors_pension\\2026-10-06_2.html",
+  "content_hash": "6c0857f0ca90d4ef43aae810c5c672a0dc52474c9c38cde808c32b9134e99d90",
+  "fetched_at": "2026-10-06T03:26:20.373389+00:00",
+  "adapter": "va",
+  "program_ids": [
+    "va_survivors_pension"
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "adapter": "ssa",
+  "url": "https://secure.ssa.gov/poms.nsf/lnx/0300202001",
+  "sections": [
+    {
+      "heading": "Social Security",
+      "level": 1,
+      "content": []
+    },
+    {
+      "heading": "Program Operations Manual System (POMS)",
+      "level": 2,
+      "content": [
+        {
+          "text": "TN 23 (10-18)"
+        }
+      ]
+    },
+    {
+      "heading": "RS 00202.001 Definitions and Requirements for Spouse Benefits",
+      "level": 1,
+      "content": [
+        {
+          "text": "CITATIONS:"
+        }
+      ]
+    },
+    {
+      "heading": "A. Definition of a Spouse",
+      "level": 2,
+      "content": [
+        {
+          "text": "A spouse must be a legal or deemed spouse:"
+        }
+      ]
+    },
+    {
+      "heading": "1. 1. A legal spouse must:",
+      "level": 3,
+      "content": [
+        {
+          "text": "a. be validly married to the number holder (NH) under the laws of the State of the NH's\n                              domicile at the time the claimant files an application (or during the life of the\n                              application); or"
+        },
+        {
+          "text": "b. have the same rights as a husband or wife to share in the distribution of the NH's\n                              intestate personal property under the laws of the State of the NH's domicile at the\n                              time of filing. To determine marital status, see GN 00305.005 ."
+        },
+        {
+          "text": "NOTE: For additional instructions on same-sex marital status see GN 00210.002 ."
+        }
+      ]
+    },
+    {
+      "heading": "2. Deemed spouse:",
+      "level": 3,
+      "content": [
+        {
+          "text": "A deemed spouse must have gone through a marriage ceremony with the NH in good faith\n                  resulting in a marriage which would have been valid except for a legal impediment.\n                  (See GN 00305.055 .)"
+        }
+      ]
+    },
+    {
+      "heading": "B. Entitlement requirements for a spouse",
+      "level": 2,
+      "content": [
+        {
+          "text": "To be entitled to benefits as a spouse, a claimant must:"
+        },
+        {
+          "text": "1. Be the spouse (see RS 00202.001A ) of a NH entitled to retirement insurance benefits (RIB) or disability insurance\n                        benefits (DIB); and"
+        },
+        {
+          "text": "2. File an application for benefits (see RS 00202.055 for the exception); and"
+        },
+        {
+          "text": "3. Not be entitled to a RIB or DIB based on a primary insurance amount (PIA) that equals\n                        or exceeds one-half the NH’s PIA; and"
+        },
+        {
+          "text": "4. Have attained age 62 or have a child in care ( RS 01310.000 ) entitled to a child’s insurance benefit on the NH’s record; and NOTE: The child must be under age 16 or disabled. The child does not need to receive\n                        benefits on the same earnings record (ER), but must be entitled to benefits on the\n                        ER of the NH. NOTE: If the child is entitled on another ER, follow RS 00615.772 to decide whether the child should file on the same ER."
+        },
+        {
+          "text": "5. Meet one of the following requirements:"
+        },
+        {
+          "text": "a. One-year duration-of-marriage: The claimant must be married for at least 1 continuous\n            year immediately before the day on which the claimant’s application is filed. This\n            requirement may be met on the basis of an application filed before the first anniversary\n            of the marriage as long as the anniversary occurs prior to adjudication."
+        },
+        {
+          "text": "b. Natural mother or father ( GN 00306.010 ) of the NH’s biological son or daughter: if a child was born to the NH and claimant,\n            the claimant meets this requirement, although the child need not be alive at the time\n            of filing."
+        },
+        {
+          "text": "c. Entitlement or potential entitlement: In the month before the claimant married\n            the insured, the claimant was entitled to, or if the claimant had applied and been\n            old enough the claimant could have been entitled to, any of these payments:"
+        },
+        {
+          "text": "• Wife’s/Husband’s benefits;"
+        },
+        {
+          "text": "• Widow’s/Widower’s benefits;"
+        },
+        {
+          "text": "• Divorced Spouse’s benefits;"
+        },
+        {
+          "text": "• Surviving Divorced Spouse’s benefits;"
+        },
+        {
+          "text": "• Parent’s benefits;"
+        },
+        {
+          "text": "• Disabled child’s benefits; or"
+        },
+        {
+          "text": "• Annuity payments under the Railroad Retirement Act (RRA) for widows, widowers, parents,\n                        or children 18 years old or older."
+        }
+      ]
+    },
+    {
+      "heading": "C. Related References",
+      "level": 2,
+      "content": [
+        {
+          "text": "• GN 00305.055 Deemed Marriages"
+        },
+        {
+          "text": "• GN 00305.060 Common-Law Marriage"
+        },
+        {
+          "text": "• GN 00305.085 Putative Marriage"
+        },
+        {
+          "text": "• RS 00208.005 Child-In-Care"
+        },
+        {
+          "table": [
+            [
+              "To Link to this section - Use this URL: http://policy.ssa.gov/poms.nsf/lnx/0300202001",
+              "RS 00202.001 - Definitions and Requirements for Spouse Benefits - 07/24/2017 Batch run: 04/15/2026 Rev: 07/24/2017"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "expected_sections": [],
+  "missing_expected_sections": [],
+  "candidate_requirements": [
+    {
+      "locator": "A. Definition of a Spouse",
+      "text": "A spouse must be a legal or deemed spouse:"
+    },
+    {
+      "locator": "2. Deemed spouse:",
+      "text": "A deemed spouse must have gone through a marriage ceremony with the NH in good faith\n                  resulting in a marriage which would have been valid except for a legal impediment.\n                  (See GN 00305.055 .)"
+    },
+    {
+      "locator": "B. Entitlement requirements for a spouse",
+      "text": "To be entitled to benefits as a spouse, a claimant must:"
+    },
+    {
+      "locator": "B. Entitlement requirements for a spouse",
+      "text": "4. Have attained age 62 or have a child in care ( RS 01310.000 ) entitled to a child’s insurance benefit on the NH’s record; and NOTE: The child must be under age 16 or disabled. The child does not need to receive\n                        benefits on the same earnings record (ER), but must be entitled to benefits on the\n                        ER of the NH. NOTE: If the child is entitled on another ER, follow RS 00615.772 to decide whether the child should file on the same ER."
+    },
+    {
+      "locator": "B. Entitlement requirements for a spouse",
+      "text": "5. Meet one of the following requirements:"
+    },
+    {
+      "locator": "B. Entitlement requirements for a spouse",
+      "text": "a. One-year duration-of-marriage: The claimant must be married for at least 1 continuous\n            year immediately before the day on which the claimant’s application is filed. This\n            requirement may be met on the basis of an application filed before the first anniversary\n            of the marriage as long as the anniversary occurs prior to adjudication."
+    },
+    {
+      "locator": "B. Entitlement requirements for a spouse",
+      "text": "b. Natural mother or father ( GN 00306.010 ) of the NH’s biological son or daughter: if a child was born to the NH and claimant,\n            the claimant meets this requirement, although the child need not be alive at the time\n            of filing."
+    }
+  ],
+  "source_id": "ssa_spouse_requirements-9f4cdaeb0bda9517",
+  "seed_id": "ssa_spouse_requirements",
+  "program_ids": [
+    "social_security_spouse"
+  ],
+  "review_required": true,
+  "extracted_on": "2026-10-06"
+}

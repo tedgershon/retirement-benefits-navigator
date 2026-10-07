@@ -1,0 +1,212 @@
+{
+  "program_id": "medicare_part_d_extra_help",
+  "name": "Medicare Part D Extra Help",
+  "agency": "Centers for Medicare & Medicaid Services and Social Security Administration",
+  "family": "extra_help",
+  "summary": "Help with Medicare drug coverage costs for people who qualify through automatic or application pathways.",
+  "application_url": "https://www.ssa.gov/medicare/part-d-extra-help",
+  "as_of": "2026-10-06",
+  "eligibility": {
+    "all": [
+      {
+        "field": "medicare_drug_coverage_eligible",
+        "operator": "==",
+        "evidence": [
+          {
+            "source_ref": "source_4",
+            "locator": "Who gets Extra Help automatically?; Who should apply for Extra Help?; Income and resource limits in 2026"
+          }
+        ],
+        "value": true
+      },
+      {
+        "field": "extra_help_geography_supported",
+        "operator": "==",
+        "evidence": [
+          {
+            "source_ref": "source_4",
+            "locator": "Who gets Extra Help automatically?; Who should apply for Extra Help?; Income and resource limits in 2026"
+          }
+        ],
+        "value": true
+      },
+      {
+        "any": [
+          {
+            "field": "full_benefit_medicaid",
+            "operator": "==",
+            "evidence": [
+              {
+                "source_ref": "source_4",
+                "locator": "Who gets Extra Help automatically?; Who should apply for Extra Help?; Income and resource limits in 2026"
+              }
+            ],
+            "value": true
+          },
+          {
+            "field": "state_pays_part_b_premium_msp",
+            "operator": "==",
+            "evidence": [
+              {
+                "source_ref": "source_4",
+                "locator": "Who gets Extra Help automatically?; Who should apply for Extra Help?; Income and resource limits in 2026"
+              }
+            ],
+            "value": true
+          },
+          {
+            "field": "receives_ssi_payment",
+            "operator": "==",
+            "evidence": [
+              {
+                "source_ref": "source_4",
+                "locator": "Who gets Extra Help automatically?; Who should apply for Extra Help?; Income and resource limits in 2026"
+              }
+            ],
+            "value": true
+          },
+          {
+            "all": [
+              {
+                "field": "extra_help_countable_annual_income_cents",
+                "operator": "<",
+                "evidence": [
+                  {
+                    "source_ref": "source_4",
+                    "locator": "Who gets Extra Help automatically?; Who should apply for Extra Help?; Income and resource limits in 2026"
+                  }
+                ],
+                "threshold": "income_limit_2026",
+                "selectors": {
+                  "household": "extra_help_household",
+                  "region": "extra_help_region"
+                }
+              },
+              {
+                "field": "extra_help_countable_resources_cents",
+                "operator": "<",
+                "evidence": [
+                  {
+                    "source_ref": "source_4",
+                    "locator": "Who gets Extra Help automatically?; Who should apply for Extra Help?; Income and resource limits in 2026"
+                  }
+                ],
+                "threshold": "resource_limit_2026",
+                "selectors": {
+                  "household": "extra_help_household",
+                  "region": "extra_help_region"
+                }
+              }
+            ]
+          },
+          {
+            "unknown": "Alaska/Hawaii limits and exception pathways are outside the modeled 2026 contiguous-U.S./D.C. screen.",
+            "evidence": [
+              {
+                "source_ref": "source_4",
+                "locator": "Who gets Extra Help automatically?; Who should apply for Extra Help?; Income and resource limits in 2026"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_ref": "source_2",
+        "locator": "42 U.S.C. § 1395w-114; statutory context"
+      }
+    ]
+  },
+  "thresholds": {
+    "income_limit_2026": {
+      "unit": "usd_cents",
+      "period": "annual",
+      "rows": [
+        {
+          "selectors": {
+            "household": "individual",
+            "region": "contiguous_us_dc"
+          },
+          "value": 2394000
+        },
+        {
+          "selectors": {
+            "household": "married_couple",
+            "region": "contiguous_us_dc"
+          },
+          "value": 3246000
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_4",
+          "locator": "Who gets Extra Help automatically?; Who should apply for Extra Help?; Income and resource limits in 2026"
+        }
+      ],
+      "effective_from": "2026-01-01",
+      "effective_to": "2027-01-01"
+    },
+    "resource_limit_2026": {
+      "unit": "usd_cents",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {
+            "household": "individual",
+            "region": "contiguous_us_dc"
+          },
+          "value": 1809000
+        },
+        {
+          "selectors": {
+            "household": "married_couple",
+            "region": "contiguous_us_dc"
+          },
+          "value": 3610000
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_4",
+          "locator": "Who gets Extra Help automatically?; Who should apply for Extra Help?; Income and resource limits in 2026"
+        }
+      ],
+      "effective_from": "2026-01-01",
+      "effective_to": "2027-01-01"
+    }
+  },
+  "tags": [
+    "medicare_drug_cost_assistance",
+    "automatic_medicaid_pathway",
+    "automatic_msp_pathway",
+    "automatic_ssi_pathway",
+    "income_limit_applies_to_application_path",
+    "resource_limit_applies_to_application_path"
+  ],
+  "follow_up": [
+    {
+      "kind": "enrollment",
+      "description": "Part D plan enrollment and the start of Extra Help assistance are separate from this discovery screen.",
+      "evidence": [{"source_ref": "source_4", "locator": "Help with drug costs; Extra Help and Part D enrollment"}]
+    }
+  ],
+  "sources": {
+    "source_1": {
+      "url": "https://www.cms.gov/medicare/enrollment-renewal/part-d-plans/low-income-subsidy/eligibility-low-income-subsidy"
+    },
+    "source_2": {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title42/html/USCODE-2024-title42-chap7-subchapXVIII-partD-subpart2-sec1395w-114.htm",
+      "snapshot_source_id": "uscode_extra_help-90ce186fe259542e",
+      "sidecar_path": "data/raw/uscode_extra_help/2026-10-06_2.json"
+    },
+    "source_3": {
+      "url": "https://www.govinfo.gov/link/uscode/42/1395w-114"
+    },
+    "source_4": {
+      "url": "https://www.medicare.gov/basics/costs/help/drug-costs",
+      "snapshot_source_id": "medicare_extra_help-cebdd5ff5fabfc52",
+      "sidecar_path": "data/raw/medicare_extra_help/2026-10-06.json"
+    }
+  }
+}

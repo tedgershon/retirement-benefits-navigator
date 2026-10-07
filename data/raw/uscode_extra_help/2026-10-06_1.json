@@ -1,0 +1,13 @@
+{
+  "source_id": "uscode_extra_help-ca3800e7a45168ee",
+  "seed_id": "uscode_extra_help",
+  "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title42/pdf/USCODE-2024-title42-chap7-subchapXVIII-partD-subpart2-sec1395w-114.pdf",
+  "document_type": "pdf",
+  "snapshot_path": "data\\raw\\uscode_extra_help\\2026-10-06_1.pdf",
+  "content_hash": "ca3800e7a45168eedca16265d08d1612998d606004c1290bd265a491ff201fa1",
+  "fetched_at": "2026-10-06T03:31:30.041481+00:00",
+  "adapter": "statute",
+  "program_ids": [
+    "medicare_part_d_extra_help"
+  ]
+}

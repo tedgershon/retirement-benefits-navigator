@@ -1,0 +1,456 @@
+{
+  "program_id": "social_security_spouse",
+  "name": "Social Security spouse and ex-spouse benefits",
+  "agency": "Social Security Administration",
+  "family": "social_security",
+  "summary": "Family benefits that may pay a spouse or ex-spouse based on an eligible worker's record.",
+  "application_url": "https://www.ssa.gov/family",
+  "as_of": "2026-10-06",
+  "eligibility": {
+    "all": [
+      {
+        "any": [
+          {
+            "all": [
+              {
+                "field": "relationship_to_worker",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_7",
+                    "locator": "Spouses and ex-spouses"
+                  }
+                ],
+                "value": "spouse"
+              },
+              {
+                "field": "worker_entitled_to_retirement_or_disability",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_7",
+                    "locator": "Spouses and ex-spouses"
+                  }
+                ],
+                "value": true
+              },
+              {
+                "field": "ssa_current_spouse_relationship_verified",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_2",
+                    "locator": "RS 00202.001 A, legal or deemed spouse"
+                  }
+                ],
+                "value": true
+              },
+              {
+                "any": [
+                  {
+                    "field": "marriage_duration_years",
+                    "operator": ">=",
+                    "threshold": "ordinary_spouse_marriage_years",
+                    "evidence": [
+                      {
+                        "source_ref": "source_2",
+                        "locator": "RS 00202.001 B.5.a, one-year duration"
+                      }
+                    ]
+                  },
+                  {
+                    "field": "claimant_is_parent_of_workers_biological_child",
+                    "operator": "==",
+                    "value": true,
+                    "evidence": [
+                      {
+                        "source_ref": "source_2",
+                        "locator": "RS 00202.001 B.5.b, natural parent alternative"
+                      }
+                    ]
+                  },
+                  {
+                    "field": "claimant_prior_qualifying_benefit_before_marriage",
+                    "operator": "==",
+                    "value": true,
+                    "evidence": [
+                      {
+                        "source_ref": "source_2",
+                        "locator": "RS 00202.001 B.5.c, prior entitlement or potential entitlement"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "field": "age_years",
+                    "operator": ">=",
+                    "evidence": [
+                      {
+                        "source_ref": "source_7",
+                        "locator": "Spouses and ex-spouses"
+                      }
+                    ],
+                    "threshold": "spouse_age_years"
+                  },
+                  {
+                    "all": [
+                      {
+                        "field": "caring_for_workers_child",
+                        "operator": "==",
+                        "evidence": [
+                          {
+                            "source_ref": "source_7",
+                            "locator": "Spouses and ex-spouses"
+                          }
+                        ],
+                        "value": true
+                      },
+                      {
+                        "field": "child_age_years",
+                        "operator": "<=",
+                        "evidence": [
+                          {
+                            "source_ref": "source_7",
+                            "locator": "Spouses and ex-spouses"
+                          }
+                        ],
+                        "threshold": "child_in_care_max_age_years"
+                      },
+                      {
+                        "field": "child_entitled_on_worker_record",
+                        "operator": "==",
+                        "evidence": [
+                          {
+                            "source_ref": "source_2",
+                            "locator": "RS 00202.001, requirements for spouse benefits and child in care"
+                          }
+                        ],
+                        "value": true
+                      },
+                      {
+                        "unknown": "Child-in-care route is not yet modeled completely for discovery; obtain an SSA determination.",
+                        "evidence": [
+                          {
+                            "source_ref": "source_7",
+                            "locator": "Spouses and ex-spouses"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "all": [
+                      {
+                        "field": "caring_for_disabled_workers_child",
+                        "operator": "==",
+                        "evidence": [
+                          {
+                            "source_ref": "source_7",
+                            "locator": "Spouses and ex-spouses"
+                          }
+                        ],
+                        "value": true
+                      },
+                      {
+                        "field": "child_entitled_on_worker_record",
+                        "operator": "==",
+                        "evidence": [
+                          {
+                            "source_ref": "source_2",
+                            "locator": "RS 00202.001, requirements for spouse benefits and child in care"
+                          }
+                        ],
+                        "value": true
+                      },
+                      {
+                        "unknown": "Child-in-care route is not yet modeled completely for discovery; obtain an SSA determination.",
+                        "evidence": [
+                          {
+                            "source_ref": "source_7",
+                            "locator": "Spouses and ex-spouses"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "ssa_own_pia_below_half_worker_pia",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_2",
+                    "locator": "RS 00202.001 B.3, own RIB/DIB PIA comparison"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "field": "relationship_to_worker",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_7",
+                    "locator": "Spouses and ex-spouses"
+                  }
+                ],
+                "value": "ex_spouse"
+              },
+              {
+                "field": "marriage_duration_years",
+                "operator": ">=",
+                "evidence": [
+                  {
+                    "source_ref": "source_7",
+                    "locator": "Spouses and ex-spouses"
+                  }
+                ],
+                "threshold": "divorced_spouse_marriage_years"
+              },
+              {
+                "field": "ssa_divorced_spouse_relationship_verified",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_1",
+                    "locator": "RS 00202.005 A, final divorce and 10-year relationship"
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "field": "worker_entitled_to_retirement_or_disability",
+                    "operator": "==",
+                    "evidence": [
+                      {
+                        "source_ref": "source_7",
+                        "locator": "Spouses and ex-spouses"
+                      }
+                    ],
+                    "value": true
+                  },
+                  {
+                    "all": [
+                      {
+                        "field": "worker_fully_insured_for_independent_divorced_spouse",
+                        "operator": "==",
+                        "value": true,
+                        "evidence": [
+                          {
+                            "source_ref": "source_1",
+                            "locator": "RS 00202.005 B.2.a, fully insured worker"
+                          }
+                        ]
+                      },
+                      {
+                        "field": "worker_age_62_throughout_entitlement_month",
+                        "operator": "==",
+                        "value": true,
+                        "evidence": [
+                          {
+                            "source_ref": "source_1",
+                            "locator": "RS 00202.005 B.2.a, worker age 62 throughout first month"
+                          }
+                        ]
+                      },
+                      {
+                        "field": "continuous_divorce_months",
+                        "operator": ">=",
+                        "threshold": "independent_divorce_months",
+                        "evidence": [
+                          {
+                            "source_ref": "source_1",
+                            "locator": "RS 00202.005 B.2.c, two continuous years"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "age_years",
+                "operator": ">=",
+                "threshold": "spouse_age_years",
+                "evidence": [
+                  {
+                    "source_ref": "source_7",
+                    "locator": "Spouses and ex-spouses"
+                  }
+                ]
+              },
+              {
+                "field": "claimant_currently_unmarried_for_divorced_spouse",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_1",
+                    "locator": "RS 00202.005 B.1.d, not married"
+                  }
+                ]
+              },
+              {
+                "field": "ssa_own_pia_below_half_worker_pia",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_1",
+                    "locator": "RS 00202.005 B.1.e, own RIB/DIB PIA comparison"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_ref": "source_4",
+        "locator": "42 U.S.C. § 402; statutory context"
+      },
+      {
+        "source_ref": "source_2",
+        "locator": "RS 00202.001, requirements for spouse benefits and child in care"
+      },
+      {
+        "source_ref": "source_3",
+        "locator": "RS 00202.100, Independently Entitled Divorced Spouse, Introduction"
+      },
+      {
+        "source_ref": "source_1",
+        "locator": "RS 00202.005 A-B, divorced spouse requirements; web tool inspection, no raw snapshot"
+      }
+    ]
+  },
+  "thresholds": {
+    "ordinary_spouse_marriage_years": {
+      "unit": "years",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 1
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_7",
+          "locator": "Spouses and ex-spouses"
+        }
+      ]
+    },
+    "divorced_spouse_marriage_years": {
+      "unit": "years",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 10
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_7",
+          "locator": "Spouses and ex-spouses"
+        }
+      ]
+    },
+    "spouse_age_years": {
+      "unit": "years",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 62
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_7",
+          "locator": "Spouses and ex-spouses"
+        }
+      ]
+    },
+    "independent_divorce_months": {
+      "unit": "months",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 24
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_1",
+          "locator": "RS 00202.005 B.2.c, two continuous years"
+        }
+      ]
+    },
+    "child_in_care_max_age_years": {
+      "unit": "years",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 15
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_7",
+          "locator": "Spouses and ex-spouses"
+        }
+      ]
+    }
+  },
+  "tags": [
+    "current_spouse_worker_entitlement_required",
+    "independent_divorced_spouse_pathway",
+    "current_spouse_pathway",
+    "divorced_spouse_pathway",
+    "child_in_care_pathway"
+  ],
+  "sources": {
+    "source_1": {
+      "url": "https://secure.ssa.gov/apps10/poms.nsf/lnx/0300202005"
+    },
+    "source_2": {
+      "url": "https://secure.ssa.gov/poms.nsf/lnx/0300202001",
+      "snapshot_source_id": "ssa_spouse_requirements-9f4cdaeb0bda9517",
+      "sidecar_path": "data/raw/ssa_spouse_requirements/2026-10-06.json"
+    },
+    "source_3": {
+      "url": "https://secure.ssa.gov/poms.nsf/lnx/0300202100",
+      "snapshot_source_id": "ssa_independent_divorced_spouse-10a741b98b0b975b",
+      "sidecar_path": "data/raw/ssa_independent_divorced_spouse/2026-10-06.json"
+    },
+    "source_4": {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title42/html/USCODE-2024-title42-chap7-subchapII-sec402.htm",
+      "snapshot_source_id": "uscode_social_security_benefits-1af74442e1b2b920",
+      "sidecar_path": "data/raw/uscode_social_security_benefits/2026-10-06_2.json"
+    },
+    "source_5": {
+      "url": "https://www.govinfo.gov/link/uscode/42/402"
+    },
+    "source_6": {
+      "url": "https://www.ssa.gov/family"
+    },
+    "source_7": {
+      "url": "https://www.ssa.gov/family/eligibility"
+    }
+  }
+}

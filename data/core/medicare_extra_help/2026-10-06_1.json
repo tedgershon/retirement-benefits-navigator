@@ -1,0 +1,255 @@
+{
+  "adapter": "medicare",
+  "url": "https://www.medicare.gov/basics/costs/help/drug-costs",
+  "sections": [
+    {
+      "heading": "Help with drug costs",
+      "level": 1,
+      "content": []
+    },
+    {
+      "heading": "What's Extra Help?",
+      "level": 2,
+      "content": [
+        {
+          "text": "\"Extra Help\" is a Medicare program to help people with limited income and resources pay Medicare drug coverage (Part D) premiums, deductibles, coinsurance, and other costs. What's a premium, deductible, coinsurance, or copayment?"
+        },
+        {
+          "text": "You also won't have to pay a Part D late enrollment penalty while you get Extra Help. What's the Part D penalty?"
+        },
+        {
+          "text": "Some people qualify for Extra Help automatically, and other people have to apply."
+        },
+        {
+          "text": "Extra Help isn't available in Puerto Rico, the U.S. Virgin Islands, Guam, the Northern Mariana Islands, or American Samoa. But there are other programs available in those areas to help people with limited income and resources. Programs vary in these areas. Call your State Medical Assistance (Medicaid) office to learn more."
+        }
+      ]
+    },
+    {
+      "heading": "Who gets Extra Help automatically?",
+      "level": 2,
+      "content": [
+        {
+          "text": "You'll get Extra Help automatically if you get:"
+        },
+        {
+          "text": "Full-benefit Medicaid coverage"
+        },
+        {
+          "text": "Help from your state paying your Part B premiums (from a Medicare Savings Program )"
+        },
+        {
+          "text": "Supplemental Security Income (SSI) payments from Social Security"
+        },
+        {
+          "text": "You'll get a notice in the mail about your Extra Help. It tells you things like how much you'll pay, and your new Medicare drug plan, if you don't have one already."
+        },
+        {
+          "text": "If you don’t get Extra Help automatically, you can apply for it:"
+        },
+        {
+          "text": "Apply for Extra Help"
+        },
+        {
+          "text": "You can also contact your local State Health Insurance Assistance Program (SHIP) to get free help applying."
+        }
+      ]
+    },
+    {
+      "heading": "Who should apply for Extra Help?",
+      "level": 2,
+      "content": [
+        {
+          "text": "In most cases, to qualify for Extra Help, you must have income and resources below a certain limit. These limits may go up each year."
+        },
+        {
+          "text": "Income and resource limits in 2026:"
+        },
+        {
+          "table": [
+            [
+              "Your situation:",
+              "Income limit: What counts in income limits?",
+              "Resource limit: What counts in resource limits?"
+            ],
+            [
+              "Individual",
+              "$23,940",
+              "$18,090"
+            ],
+            [
+              "Married couple",
+              "$32,460",
+              "$36,100"
+            ]
+          ]
+        },
+        {
+          "text": "What are the income and resource limits if I live in Alaska or Hawaii?"
+        }
+      ]
+    },
+    {
+      "heading": "If you qualify for Extra Help",
+      "level": 2,
+      "content": [
+        {
+          "text": "We’ll automatically enroll you in a Medicare drug plan (Part D) , if you don’t have one already. We do this so you can get the cost savings you qualify for."
+        },
+        {
+          "text": "You’ll get a notice telling you: About your new plan. You can pick a different Medicare drug plan if you want. That you get Extra Help for the rest of the calendar year. Even if your income changes in the middle of the year, you’ll keep getting Extra Help through December 31."
+        },
+        {
+          "text": "If you meet the income and resource limits for next year, you’ll keep getting Extra Help. We’ll mail you a notice only if: You no longer qualify for Extra Help. You get moved to a different plan for next year."
+        },
+        {
+          "text": "If you don’t get a notice from Medicare or Social Security, you’ll keep getting Extra Help and keep the same plan for next year."
+        }
+      ]
+    },
+    {
+      "heading": "What you'll pay under Extra Help in 2027",
+      "level": 2,
+      "content": [
+        {
+          "text": "Plan premium: $0"
+        },
+        {
+          "text": "Plan deductible: $0"
+        },
+        {
+          "text": "Prescriptions you fill at one of your plan's participating pharmacies: Up to $5.80 for each generic drug Up to $14.40 for each brand-name drug Once your total drug costs (including certain payments made on your behalf, like through the Extra Help program) reach $2,400, you’ll pay $0 for each covered drug."
+        },
+        {
+          "text": "If you also get full Medicaid coverage and are in the Qualified Medicare Beneficiary (QMB) program, you’ll pay no more than $4.90 for each covered drug. Find out if you may qualify for QMB or other Medicare Savings Programs."
+        },
+        {
+          "text": "Learn more about the letters you get when you qualify for Extra Help."
+        }
+      ]
+    },
+    {
+      "heading": "Do you think you're paying the wrong amount for your prescription(s)?",
+      "level": 2,
+      "content": [
+        {
+          "text": "If you qualify for Extra Help and think you’re paying the wrong amount, here’s what you can do:"
+        },
+        {
+          "text": "Contact your drug plan. Your plan may ask for proof that you get Extra Help so they can correct your costs. Get examples of proof ."
+        },
+        {
+          "text": "Call us at 1-800-MEDICARE (1-800-633-4227). TTY users can call 1-877-486-2048. We can tell you your level of Extra Help and help you get your costs fixed with the plan."
+        },
+        {
+          "text": "Medicare’s Limited Income Newly Eligible Transition (LI NET) Program gives temporary Medicare Part D drug coverage to people who qualify for Extra Help or Medicaid but who aren't enrolled in a Medicare drug plan yet. You may be able to get some money back if you paid for covered Part D drugs after you qualified for LI NET. Keep your receipts with your prescription drug prices, and call LI NET at 1-800-783-1307. TTY users can call 711. Someone will be available to take your call from 8 a.m. – 7 p.m. Eastern time (ET)."
+        },
+        {
+          "text": "Most people with Medicare can only switch plans at certain times of the year. If you have Medicaid or get Extra Help, you may be able to change your drug coverage once per month."
+        }
+      ]
+    },
+    {
+      "heading": "Other ways to lower your prescription drug costs:",
+      "level": 2,
+      "content": [
+        {
+          "text": "Join Medicare drug coverage (Part D): Compare Medicare drug plans to find a plan with lower drug costs. Check if the company that makes your drug offers help paying for it. Find out if your state offers help with drug costs."
+        },
+        {
+          "text": "Ask your doctor if you can take a generic drug, or a cheaper brand-name drug (if one’s available)."
+        },
+        {
+          "text": "Check costs for mail-order pharmacies. Sometimes using a mail order pharmacy is cheaper."
+        },
+        {
+          "text": "Learn if the Medicare Prescription Payment Plan might be able to help you manage your costs."
+        },
+        {
+          "text": "Visit TrumpRx.gov : Find special offers and the lowest cash price on prescription drugs. You can’t buy drugs directly from TrumpRx. Compare TrumpRx prices with what you pay under your plan to make sure you get the best price. TrumpRx and other types of discount cards aren’t considered creditable coverage. When you use them (instead of your Medicare plan) to buy drugs, it doesn’t count toward your Medicare deductible or out-of-pocket maximum."
+        }
+      ]
+    },
+    {
+      "heading": "What do you want to do next?",
+      "level": 2,
+      "content": [
+        {
+          "text": "Next Step: Learn about other health plans that lower costs"
+        },
+        {
+          "text": "Take Action: Apply for Extra Help"
+        },
+        {
+          "text": "Get details: Review sample letters about Extra Help"
+        }
+      ]
+    }
+  ],
+  "expected_sections": [],
+  "missing_expected_sections": [],
+  "candidate_requirements": [
+    {
+      "locator": "What's Extra Help?",
+      "text": "\"Extra Help\" is a Medicare program to help people with limited income and resources pay Medicare drug coverage (Part D) premiums, deductibles, coinsurance, and other costs. What's a premium, deductible, coinsurance, or copayment?"
+    },
+    {
+      "locator": "What's Extra Help?",
+      "text": "Some people qualify for Extra Help automatically, and other people have to apply."
+    },
+    {
+      "locator": "What's Extra Help?",
+      "text": "Extra Help isn't available in Puerto Rico, the U.S. Virgin Islands, Guam, the Northern Mariana Islands, or American Samoa. But there are other programs available in those areas to help people with limited income and resources. Programs vary in these areas. Call your State Medical Assistance (Medicaid) office to learn more."
+    },
+    {
+      "locator": "Who gets Extra Help automatically?",
+      "text": "Supplemental Security Income (SSI) payments from Social Security"
+    },
+    {
+      "locator": "Who should apply for Extra Help?",
+      "text": "In most cases, to qualify for Extra Help, you must have income and resources below a certain limit. These limits may go up each year."
+    },
+    {
+      "locator": "Who should apply for Extra Help?",
+      "text": "Income and resource limits in 2026:"
+    },
+    {
+      "locator": "Who should apply for Extra Help?",
+      "text": "What are the income and resource limits if I live in Alaska or Hawaii?"
+    },
+    {
+      "locator": "If you qualify for Extra Help",
+      "text": "We’ll automatically enroll you in a Medicare drug plan (Part D) , if you don’t have one already. We do this so you can get the cost savings you qualify for."
+    },
+    {
+      "locator": "If you qualify for Extra Help",
+      "text": "You’ll get a notice telling you: About your new plan. You can pick a different Medicare drug plan if you want. That you get Extra Help for the rest of the calendar year. Even if your income changes in the middle of the year, you’ll keep getting Extra Help through December 31."
+    },
+    {
+      "locator": "If you qualify for Extra Help",
+      "text": "If you meet the income and resource limits for next year, you’ll keep getting Extra Help. We’ll mail you a notice only if: You no longer qualify for Extra Help. You get moved to a different plan for next year."
+    },
+    {
+      "locator": "What you'll pay under Extra Help in 2027",
+      "text": "If you also get full Medicaid coverage and are in the Qualified Medicare Beneficiary (QMB) program, you’ll pay no more than $4.90 for each covered drug. Find out if you may qualify for QMB or other Medicare Savings Programs."
+    },
+    {
+      "locator": "What you'll pay under Extra Help in 2027",
+      "text": "Learn more about the letters you get when you qualify for Extra Help."
+    },
+    {
+      "locator": "Do you think you're paying the wrong amount for your prescription(s)?",
+      "text": "If you qualify for Extra Help and think you’re paying the wrong amount, here’s what you can do:"
+    },
+    {
+      "locator": "Do you think you're paying the wrong amount for your prescription(s)?",
+      "text": "Medicare’s Limited Income Newly Eligible Transition (LI NET) Program gives temporary Medicare Part D drug coverage to people who qualify for Extra Help or Medicaid but who aren't enrolled in a Medicare drug plan yet. You may be able to get some money back if you paid for covered Part D drugs after you qualified for LI NET. Keep your receipts with your prescription drug prices, and call LI NET at 1-800-783-1307. TTY users can call 711. Someone will be available to take your call from 8 a.m. – 7 p.m. Eastern time (ET)."
+    }
+  ],
+  "source_id": "medicare_extra_help-cebdd5ff5fabfc52",
+  "seed_id": "medicare_extra_help",
+  "program_ids": [
+    "medicare_part_d_extra_help"
+  ],
+  "review_required": true
+}

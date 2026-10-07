@@ -1,0 +1,604 @@
+{
+  "program_id": "va_survivors_pension",
+  "name": "VA Survivors Pension",
+  "agency": "Department of Veterans Affairs",
+  "family": "va_pension",
+  "summary": "Monthly pension for qualifying surviving spouses or children of wartime Veterans subject to the program's requirements.",
+  "application_url": "https://www.va.gov/family-and-caregiver-benefits/survivor-compensation/apply-for-dic-survivors-pension-accrued-benefits-form-21p-534ez/",
+  "as_of": "2026-10-06",
+  "eligibility": {
+    "all": [
+      {
+        "field": "deceased_veteran_discharge_qualifies",
+        "operator": "==",
+        "evidence": [
+          {
+            "source_ref": "source_7",
+            "locator": "Surviving spouse and child eligibility sections"
+          }
+        ],
+        "value": true
+      },
+      {
+        "field": "deceased_veteran_wartime_service_days",
+        "operator": ">=",
+        "evidence": [
+          {
+            "source_ref": "source_7",
+            "locator": "Surviving spouse and child eligibility sections"
+          }
+        ],
+        "threshold": "wartime_service_days"
+      },
+      {
+        "any": [
+          {
+            "field": "deceased_veteran_service_route_confirmed",
+            "operator": "==",
+            "evidence": [
+              {
+                "source_ref": "source_7",
+                "locator": "Surviving spouse and child eligibility sections"
+              }
+            ],
+            "value": true
+          },
+          {
+            "field": "va_deceased_veteran_service_exception_verified",
+            "operator": "==",
+            "value": true,
+            "evidence": [
+              {
+                "source_ref": "source_1",
+                "locator": "38 CFR 3.12a(d)-(e), survivor effect of minimum-duty exception; 38 USC 1541 and 1542 service routes; web tool inspection, no raw snapshot"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "any": [
+          {
+            "all": [
+              {
+                "field": "relationship_to_veteran",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_7",
+                    "locator": "Surviving spouse and child eligibility sections"
+                  }
+                ],
+                "value": "surviving_spouse"
+              },
+              {
+                "field": "va_survivor_case",
+                "operator": "in",
+                "value": [
+                  "spouse_no_child",
+                  "spouse_one_child",
+                  "spouse_multiple_children"
+                ],
+                "evidence": [
+                  {
+                    "source_ref": "source_9",
+                    "locator": "2026 surviving-spouse MAPR rows by dependent-child count; raw snapshot in rates seed"
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "field": "remarried_after_veteran_death",
+                    "operator": "==",
+                    "value": false,
+                    "evidence": [
+                      {
+                        "source_ref": "source_7",
+                        "locator": "Surviving spouse eligibility: not remarried"
+                      }
+                    ]
+                  },
+                  {
+                    "field": "va_pension_remarriage_exception_verified",
+                    "operator": "==",
+                    "value": true,
+                    "evidence": [
+                      {
+                        "source_ref": "source_4",
+                        "locator": "38 CFR 3.55(a)(1)-(2), void, annulled and qualifying pre-1990 terminated remarriages; web tool inspection, no raw snapshot"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "field": "continuous_cohabitation_met",
+                    "operator": "==",
+                    "evidence": [
+                      {
+                        "source_ref": "source_7",
+                        "locator": "Surviving spouse and child eligibility sections"
+                      }
+                    ],
+                    "value": true
+                  },
+                  {
+                    "field": "va_cohabitation_exception_verified",
+                    "operator": "==",
+                    "evidence": [
+                      {
+                        "source_ref": "source_7",
+                        "locator": "Surviving spouse eligibility: recognized separation for health, work or Veteran misconduct"
+                      }
+                    ],
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "field": "relationship_to_veteran",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_7",
+                    "locator": "Surviving spouse and child eligibility sections"
+                  }
+                ],
+                "value": "child"
+              },
+              {
+                "field": "va_child_not_in_custody_of_pension_eligible_surviving_spouse",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_2",
+                    "locator": "38 CFR 3.24(a), separate child entitlement and meaning of spouse basic eligibility; web tool inspection, no raw snapshot"
+                  }
+                ]
+              },
+              {
+                "field": "unmarried_child",
+                "operator": "==",
+                "evidence": [
+                  {
+                    "source_ref": "source_7",
+                    "locator": "Surviving spouse and child eligibility sections"
+                  }
+                ],
+                "value": true
+              },
+              {
+                "field": "va_survivor_child_dependency_verified",
+                "operator": "==",
+                "value": true,
+                "evidence": [
+                  {
+                    "source_ref": "source_7",
+                    "locator": "Survivors Pension: unmarried dependent child eligibility"
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "field": "age_years",
+                    "operator": "<",
+                    "evidence": [
+                      {
+                        "source_ref": "source_7",
+                        "locator": "Surviving spouse and child eligibility sections"
+                      }
+                    ],
+                    "threshold": "child_age_limit_years"
+                  },
+                  {
+                    "all": [
+                      {
+                        "field": "age_years",
+                        "operator": "<",
+                        "evidence": [
+                          {
+                            "source_ref": "source_7",
+                            "locator": "Surviving spouse and child eligibility sections"
+                          }
+                        ],
+                        "threshold": "student_age_limit_years"
+                      },
+                      {
+                        "field": "va_approved_school_student",
+                        "operator": "==",
+                        "evidence": [
+                          {
+                            "source_ref": "source_7",
+                            "locator": "Surviving spouse and child eligibility sections"
+                          }
+                        ],
+                        "value": true
+                      }
+                    ]
+                  },
+                  {
+                    "field": "incapable_of_self_support_disability_before_18",
+                    "operator": "==",
+                    "evidence": [
+                      {
+                        "source_ref": "source_7",
+                        "locator": "Surviving spouse and child eligibility sections"
+                      }
+                    ],
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "all": [
+                      {
+                        "field": "va_survivor_case",
+                        "operator": "==",
+                        "value": "qualified_child",
+                        "evidence": [
+                          {
+                            "source_ref": "source_8",
+                            "locator": "Qualified surviving child rate; web tool inspection, no raw snapshot"
+                          }
+                        ]
+                      },
+                      {
+                        "field": "va_child_no_personal_custodian_or_institutional_custody",
+                        "operator": "==",
+                        "value": true,
+                        "evidence": [
+                          {
+                            "source_ref": "source_2",
+                            "locator": "38 CFR 3.24(b), standalone child rate; web tool inspection, no raw snapshot"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "all": [
+                      {
+                        "field": "va_survivor_case",
+                        "operator": "==",
+                        "value": "qualified_child_custodian",
+                        "evidence": [
+                          {
+                            "source_ref": "source_2",
+                            "locator": "38 CFR 3.24(c), custodian formula case; web tool inspection, no raw snapshot"
+                          }
+                        ]
+                      },
+                      {
+                        "field": "va_custodian_child_rate_formula_verified",
+                        "operator": "==",
+                        "value": true,
+                        "evidence": [
+                          {
+                            "source_ref": "source_2",
+                            "locator": "38 CFR 3.24(c), custodian and child income calculation; web tool inspection, no raw snapshot"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "unknown": "Surviving-child custody and rate pathways require further VA rule review.",
+                "evidence": [
+                  {
+                    "source_ref": "source_7",
+                    "locator": "Surviving spouse and child eligibility sections"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field": "va_survivor_net_worth_cents",
+        "operator": "<=",
+        "evidence": [
+          {
+            "source_ref": "source_9",
+            "locator": "Net worth limit; Maximum Annual Pension Rate tables, December 1, 2025"
+          }
+        ],
+        "threshold": "net_worth_limit"
+      },
+      {
+        "field": "va_survivor_mapr_case_and_tier_verified",
+        "operator": "==",
+        "value": true,
+        "evidence": [
+          {
+            "source_ref": "source_8",
+            "locator": "2026 MAPR tables; child count, custody and assistance tier; web tool inspection, no raw snapshot"
+          }
+        ]
+      },
+      {
+        "field": "va_survivor_income_for_purposes_annual_cents",
+        "operator": "<",
+        "evidence": [
+          {
+            "source_ref": "source_9",
+            "locator": "Net worth limit; Maximum Annual Pension Rate tables, December 1, 2025"
+          }
+        ],
+        "threshold": "mapr_2026",
+        "selectors": {
+          "case": "va_survivor_case",
+          "tier": "va_survivor_tier"
+        }
+      },
+      {
+        "field": "va_survivor_asset_transfer_penalty_not_in_effect",
+        "operator": "==",
+        "evidence": [
+          {
+            "source_ref": "source_3",
+            "locator": "38 CFR 3.276(b)-(e), 36-month lookback, covered transfers and penalty exceptions; web tool inspection, no raw snapshot"
+          }
+        ],
+        "value": true
+      }
+    ],
+    "evidence": [
+      {
+        "source_ref": "source_5",
+        "locator": "38 U.S.C. § 1541; statutory context"
+      },
+      {
+        "source_ref": "source_1",
+        "locator": "38 CFR 3.12a(e), survivor effects of minimum-duty requirement; web tool inspection, no raw snapshot"
+      },
+      {
+        "source_ref": "source_3",
+        "locator": "38 CFR 3.276, asset transfers and penalty periods; web tool inspection, no raw snapshot"
+      },
+      {
+        "source_ref": "source_4",
+        "locator": "38 CFR 3.55(a)(1)-(2), surviving-spouse pension remarriage exceptions; web tool inspection, no raw snapshot"
+      },
+      {
+        "source_ref": "source_2",
+        "locator": "38 CFR 3.24(a)-(c), separate child entitlement and custody-sensitive rates; web tool inspection, no raw snapshot"
+      }
+    ]
+  },
+  "thresholds": {
+    "wartime_service_days": {
+      "unit": "days",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 1
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_7",
+          "locator": "Surviving spouse and child eligibility sections"
+        }
+      ]
+    },
+    "child_age_limit_years": {
+      "unit": "years",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 18
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_7",
+          "locator": "Surviving spouse and child eligibility sections"
+        }
+      ]
+    },
+    "student_age_limit_years": {
+      "unit": "years",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 23
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_7",
+          "locator": "Surviving spouse and child eligibility sections"
+        }
+      ]
+    },
+    "net_worth_limit": {
+      "unit": "usd_cents",
+      "period": "not_applicable",
+      "rows": [
+        {
+          "selectors": {},
+          "value": 16369900
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_9",
+          "locator": "Net worth limit; Maximum Annual Pension Rate tables, December 1, 2025"
+        }
+      ],
+      "effective_from": "2025-12-01",
+      "effective_to": "2026-12-01"
+    },
+    "mapr_2026": {
+      "unit": "usd_cents",
+      "period": "annual",
+      "rows": [
+        {
+          "selectors": {
+            "case": "spouse_no_child",
+            "tier": "basic"
+          },
+          "value": 1169900
+        },
+        {
+          "selectors": {
+            "case": "spouse_no_child",
+            "tier": "housebound"
+          },
+          "value": 1429800
+        },
+        {
+          "selectors": {
+            "case": "spouse_no_child",
+            "tier": "aid_attendance"
+          },
+          "value": 1869700
+        },
+        {
+          "selectors": {
+            "case": "spouse_no_child",
+            "tier": "saw_aid_attendance"
+          },
+          "value": 1945300
+        },
+        {
+          "selectors": {
+            "case": "spouse_one_child",
+            "tier": "basic"
+          },
+          "value": 1531100
+        },
+        {
+          "selectors": {
+            "case": "spouse_one_child",
+            "tier": "housebound"
+          },
+          "value": 1790200
+        },
+        {
+          "selectors": {
+            "case": "spouse_one_child",
+            "tier": "aid_attendance"
+          },
+          "value": 2230400
+        },
+        {
+          "selectors": {
+            "case": "spouse_one_child",
+            "tier": "saw_aid_attendance"
+          },
+          "value": 2297900
+        },
+        {
+          "selectors": {
+            "case": "qualified_child",
+            "tier": "basic"
+          },
+          "value": 298400
+        },
+        {
+          "selectors": {
+            "case": "spouse_multiple_children",
+            "tier": "basic"
+          },
+          "input_field": "va_applicable_survivor_mapr_cents"
+        },
+        {
+          "selectors": {
+            "case": "spouse_multiple_children",
+            "tier": "housebound"
+          },
+          "input_field": "va_applicable_survivor_mapr_cents"
+        },
+        {
+          "selectors": {
+            "case": "spouse_multiple_children",
+            "tier": "aid_attendance"
+          },
+          "input_field": "va_applicable_survivor_mapr_cents"
+        },
+        {
+          "selectors": {
+            "case": "spouse_multiple_children",
+            "tier": "saw_aid_attendance"
+          },
+          "input_field": "va_applicable_survivor_mapr_cents"
+        },
+        {
+          "selectors": {
+            "case": "qualified_child_custodian",
+            "tier": "basic"
+          },
+          "input_field": "va_applicable_survivor_mapr_cents"
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "source_9",
+          "locator": "Net worth limit; Maximum Annual Pension Rate tables, December 1, 2025"
+        }
+      ],
+      "effective_from": "2025-12-01",
+      "effective_to": "2026-12-01"
+    }
+  },
+  "tags": [
+    "surviving_spouse_pathway",
+    "dependent_child_pathway",
+    "deceased_wartime_veteran_service_required",
+    "va_income_for_purposes_limit",
+    "net_worth_limit_applies"
+  ],
+  "sources": {
+    "source_1": {
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title38-vol1/pdf/CFR-2025-title38-vol1-sec3-12a.pdf"
+    },
+    "source_2": {
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title38-vol1/pdf/CFR-2025-title38-vol1-sec3-24.pdf"
+    },
+    "source_3": {
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title38-vol1/pdf/CFR-2025-title38-vol1-sec3-276.pdf"
+    },
+    "source_4": {
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title38-vol1/pdf/CFR-2025-title38-vol1-sec3-55.pdf"
+    },
+    "source_5": {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title38/html/USCODE-2024-title38-partII-chap15-subchapIII-other-dup1-sec1541.htm",
+      "snapshot_source_id": "uscode_survivors_pension-ce1cc098d31b1c23",
+      "sidecar_path": "data/raw/uscode_survivors_pension/2026-10-06_2.json"
+    },
+    "source_6": {
+      "url": "https://www.govinfo.gov/link/uscode/38/1541"
+    },
+    "source_7": {
+      "url": "https://www.va.gov/family-and-caregiver-benefits/survivor-compensation/survivors-pension/",
+      "snapshot_source_id": "va_survivors_pension-2460cd662f30f4bc",
+      "sidecar_path": "data/raw/va_survivors_pension/2026-10-06_7.json"
+    },
+    "source_8": {
+      "url": "https://www.va.gov/family-and-caregiver-benefits/survivor-compensation/survivors-pension/rates/"
+    },
+    "source_9": {
+      "url": "https://www.va.gov/family-and-caregiver-benefits/survivor-compensation/survivors-pension/rates/",
+      "snapshot_source_id": "va_survivors_pension_rates-dca83149647e7622",
+      "sidecar_path": "data/raw/va_survivors_pension_rates/2026-10-06_7.json"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "source_id": "medicare_sign_up-bb7c7c94e309c34a",
+  "seed_id": "medicare_sign_up",
+  "url": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/how-do-i-sign-up-for-medicare",
+  "document_type": "html",
+  "snapshot_path": "data\\raw\\medicare_sign_up\\2026-10-06_2.html",
+  "content_hash": "bb7c7c94e309c34a56b43f5a700e87a5cb3190473cc32a7dcbb49b4bb5a185e0",
+  "fetched_at": "2026-10-06T03:33:48.789473+00:00",
+  "adapter": "medicare",
+  "program_ids": [
+    "medicare_eligibility"
+  ]
+}
